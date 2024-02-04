@@ -395,43 +395,43 @@
   {
     "objectID": "resume.html",
     "href": "resume.html",
-    "title": "Isaac Newtons’s CV",
+    "title": "Daniel Dominguez",
     "section": "",
-    "text": "Physicist, Mathematician, Cambridge professor.\n\nisaac@applesdofall.org | My wikipedia page\n\n\n\nStanding on the shoulders of giants\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples.\n\n\n\n\n1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow\n\n\n\n\n2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France\n\n\n\n\n\n\n1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001\n\n\n\n\n1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
+    "text": "385.328.1955 | danndch@gmail.com |  LinkedIn | Data Science Program"
   },
   {
-    "objectID": "resume.html#currently",
-    "href": "resume.html#currently",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "Standing on the shoulders of giants\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples."
+    "objectID": "resume.html#education.",
+    "href": "resume.html#education.",
+    "title": "Daniel Dominguez",
+    "section": "Education.",
+    "text": "Education.\n\nB.Sc. Data Science\nBrigham Young University Idaho (Rexburg, ID)\nJan 2020 - April 2024\n\nMinor: Statistics, Business Analytics\n\nCertificates: Machine Learning, Database, Applied Programming."
   },
   {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow"
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Daniel Dominguez",
+    "section": "Skills",
+    "text": "Skills\n\nSkills\n\n\n\n\n\n\n\nData Analysis, Wrangling, and Visualization:\nProgramming:\nDatabase Design and Administration:\n\n\n\n\n• Pyspark and SQL (Big Data)\n• Python\n• SQL\n\n\n• R, Python\n• Pytorch, TensorFlow\n• PosrgreSQL\n\n\n• Statistical Analysis in R\n• C#\n• Relational and Non Relational DB\n\n\n• Tableau, Domo, Power BI"
   },
   {
-    "objectID": "resume.html#awards",
-    "href": "resume.html#awards",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France"
+    "objectID": "resume.html#work-experience.",
+    "href": "resume.html#work-experience.",
+    "title": "Daniel Dominguez",
+    "section": "Work Experience.",
+    "text": "Work Experience.\n\nData Analyst.\nBYUI Communications (Rexburg, ID)\nOct 2021- Present\n\nStablished a funnel withing GA4 to understand the flow of the Admissions process of the University with the purpose of understand\n\nEstablished pipeline from Twilio API in Python, retrieving 30K+ messages per month, ETL the data to connect to a dashboard on Power BI with the purpose of recognizing messaging trends, dropout, sentiment analysis, usage by 33 university departments, and billing.\n\nLeveraged web-scraping in R data of 94K pages, to optimize user experiences and drive success, identifying errors and updating SEO content to improve accessibility and usability.\n\nProficiency in Google Analytics and GA4, to monitor and evaluate engagement data for 60,000+ students, 200,000+ alumni, and various stakeholders, translating insights into meaningful visual reports in Looker Studio, for 33 different University departments.\n\n\n\nData Science Tutor.\nBYUI Math Department (Rexburg, ID)\nSep 2023 - Present\n\nAid students with their questions to meet rubrics on assignments from different courses such as: Data Science Programing, Data Wrangling, Big Data, Machine Learning."
   },
   {
-    "objectID": "resume.html#publications",
-    "href": "resume.html#publications",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001"
+    "objectID": "resume.html#projects.",
+    "href": "resume.html#projects.",
+    "title": "Daniel Dominguez",
+    "section": "Projects.",
+    "text": "Projects.\n\niWorq Consulting Project (Remote).\nApr-Jul 2023\n\n\nAutomated a live dashboard to seamlessly retrieve data from AWS-S3, working of over 9 million CSV data points into the refined Parquet format using R. This transformative process empowered intricate feature engineering, culminating in early predictions of service cancellations based on client usage patterns.\n\n\n\n\nWhat’s That Fish.\nApr-Jul 2023\n\n\nDeveloped a fish identification app utilizing Convolutional Neural Networks (92% accuracy) to recognize trout species from photos. Deployed the app on Google Firebase, enabling seamless photo storage and database integration for user interactions. \n\n\n\nSinclair Tire Dealership.\n(BYUI Data Science Society) Apr-Jul 2023\n\n\nDeveloped on Streamlit an analytics tool to Web-scrape a given URL to aid a tire dealership from a given URL and retrieve information to help establish retail price according to the competition.\n\n\n\n\nJohn Deer - Stotz.\n(BYUI Data Science Society) Jan-Apr 2023\n\n\nProject manage to establish a data pipeline and do ETL Process working with the John Deere API to feed a dashboard. The scope of the project was to do exploratory analysis to understand the data for future projects.\n\n\n\n\nBeehive Credit Union.\n(BYUI Data Science Society) Sep-Dec 2022\n\n\nEmployed Python, Spark, and TensorFlow to create a machine learning model, enabling Beehive Credit Union to make informed decisions about new possible store locations by analyzing National Census Data and institutional data."
   },
   {
-    "objectID": "resume.html#occupation",
-    "href": "resume.html#occupation",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
+    "objectID": "resume.html#volunteer",
+    "href": "resume.html#volunteer",
+    "title": "Daniel Dominguez",
+    "section": "Volunteer",
+    "text": "Volunteer\n\nData Science Society Leadership Apr 2023-Present\nBYU-I Data Science Society Rexburg, ID\n\n\nLed and structured the efforts of 11 projects, maintaining regular contact and meetings with the 22 project managers to facilitate project progress, tools, and deliver the final products by the due date."
   }
 ]
