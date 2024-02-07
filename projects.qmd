@@ -1,14 +1,55 @@
 ---
 title: "Senior Project"
-subtitle: "Repo for all my Projects"
+subtitle: "Repo to showcase my last Project in college"
 # use quarto markdown to 
 ---
 
-# DS250 Projects
-## Repo for all my Projects
 
-- [Project 1](/Projects/project1.qmd)
+# Project Outline
+
+The objective of this project is to design and construct an educational framework that helps Data Science students develop skills typically used by Data Engineers. This project aims to introduce students to scenarios and a pace of research and learning that keeps a scholarly mindset while incorporating aspects of a professional environment.
+
+## Potential Topics
+
+This outline has been put together from different sources including academic literature, industry job postings, and IT articles. The mix of this different skills it might be relevant and could boost the value for future students in the job market, thereby enhancing the employability of future graduates. The proposed topics are the following:
+
+- **Data Science vs. Data Engineering**
+
+- **TEL, ELT, ETL, ETLT?**
+
+- **Data Pipelines and Workflows**
+
+- **NoSQL Databases?**
+
+- **Data Transformation Techniques with SQL**
+
+- **Cloud-based Data Services**
+
+- **Performance Optimization**
+
+- **Data Quality, Testing, and Monitoring**
+
+- **Big Data Technologies**
+
+- **Data Ingestion Tools**
+
+- **Containerization and Virtualization**
+
+- **Data Governance and Ethics**
+
+- **Advanced Analytics and Machine Learning Operations (MLOps)**
+
+- **Real-time Data Processing and Analytics**
+
+- **Data Visualization and Reporting**
+
+- **APIs for Data Science**
+
+- **Collaborative Data Science**
+
+
+- [Data Science vs. Data Engineering](/Projects/project1.qmd)
 - [Project 2](/Projects/project2.qmd)
 - [Project 3](/Projects/project3.qmd)
 - [Project 4](/Projects/project4.qmd)
-- [Project 5](/Projects/project5.qmd)
+- [Back ground and research](/Projects/project5.qmd)
