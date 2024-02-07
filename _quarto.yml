@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Daniel Dominguez Portfolio"
-  favicon: Images/favicon.png
+  favicon: Images/logo.png
   back-to-top-navigation: true
   repo-url: https://github.com/your_url
   #repo-actions: [issue] #if you want to allow others to report issues on your site uncomment this line
@@ -21,7 +21,7 @@ website:
     right:
       - text: "Home"
         file: index.qmd
-      - text: "DS250 Projects"
+      - text: "Senior Project"
         file: projects.qmd
       - text: "My Resume"
         file: resume.qmd
