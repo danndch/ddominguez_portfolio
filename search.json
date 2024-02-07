@@ -216,16 +216,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "about me",
+    "title": "Welcom to my portfolio",
     "section": "",
-    "text": "MarkDown Basics"
+    "text": "Hey there, I’m Daniel Dominguez, a Data Science major at BYU-Idaho University. As a kid growing up in Mexico City, I was always a keen observer of the world around me. I found that I was able to glean insights and patterns from the things that most people didn’t notice. This natural curiosity and analytical mind led me to the fascinating field of data science.\nTo me, data is like a story waiting to be told. Every set of data has its own narrative, and it’s my job to uncover the hidden stories and connections within it. As someone who is passionate about storytelling, I believe that data analysis is a powerful tool for understanding our world and making better decisions.\nI’m passionate about all things data-related, but what really drives me is the ability to predict scenarios based on past and present trends. It’s like being able to read the next chapter of a gripping story before anyone else! I’m constantly amazed by how the dots connect when we analyze data, and how insights gained from one area can inform and improve other areas.\nAs a problem-solver at heart, I relish the challenge of identifying issues and devising ways to tackle them. I’m always eager to put my skills to the test and find the best possible outcomes.\nSo, if you’re interested in exploring the world of data or just want to chat, feel free to reach out to me. Let’s see what we can create together!\n\ndanndch7@gmail.com | Data Science Program |  LinkedIn"
   },
   {
-    "objectID": "index.html#title-2-header",
-    "href": "index.html#title-2-header",
-    "title": "about me",
+    "objectID": "index.html#this-still-under-construcion",
+    "href": "index.html#this-still-under-construcion",
+    "title": "Welcom to my portfolio",
     "section": "",
-    "text": "MarkDown Basics"
+    "text": "Hey there, I’m Daniel Dominguez, a Data Science major at BYU-Idaho University. As a kid growing up in Mexico City, I was always a keen observer of the world around me. I found that I was able to glean insights and patterns from the things that most people didn’t notice. This natural curiosity and analytical mind led me to the fascinating field of data science.\nTo me, data is like a story waiting to be told. Every set of data has its own narrative, and it’s my job to uncover the hidden stories and connections within it. As someone who is passionate about storytelling, I believe that data analysis is a powerful tool for understanding our world and making better decisions.\nI’m passionate about all things data-related, but what really drives me is the ability to predict scenarios based on past and present trends. It’s like being able to read the next chapter of a gripping story before anyone else! I’m constantly amazed by how the dots connect when we analyze data, and how insights gained from one area can inform and improve other areas.\nAs a problem-solver at heart, I relish the challenge of identifying issues and devising ways to tackle them. I’m always eager to put my skills to the test and find the best possible outcomes.\nSo, if you’re interested in exploring the world of data or just want to chat, feel free to reach out to me. Let’s see what we can create together!\n\ndanndch7@gmail.com | Data Science Program |  LinkedIn"
   },
   {
     "objectID": "Projects/project1.html",
@@ -418,7 +418,7 @@
     "href": "resume.html#work-experience.",
     "title": "Daniel Dominguez",
     "section": "Work Experience.",
-    "text": "Work Experience.\n\nData Analyst.\nBYUI Communications (Rexburg, ID)\nOct 2021- Present\n\nStablished a funnel withing GA4 to understand the flow of the Admissions process of the University with the purpose of understand\n\nEstablished pipeline from Twilio API in Python, retrieving 30K+ messages per month, ETL the data to connect to a dashboard on Power BI with the purpose of recognizing messaging trends, dropout, sentiment analysis, usage by 33 university departments, and billing.\n\nLeveraged web-scraping in R data of 94K pages, to optimize user experiences and drive success, identifying errors and updating SEO content to improve accessibility and usability.\n\nProficiency in Google Analytics and GA4, to monitor and evaluate engagement data for 60,000+ students, 200,000+ alumni, and various stakeholders, translating insights into meaningful visual reports in Looker Studio, for 33 different University departments.\n\n\n\nData Science Tutor.\nBYUI Math Department (Rexburg, ID)\nSep 2023 - Present\n\nAid students with their questions to meet rubrics on assignments from different courses such as: Data Science Programing, Data Wrangling, Big Data, Machine Learning."
+    "text": "Work Experience.\n\nData Analyst.\nBYUI Communications (Rexburg, ID)\nOct 2021- Present\n\nDesigned and implemented a GA4-based analytics funnel to analyze the University Admissions process, understanding the story and identifying key stages where applicants face delays or drop out. Utilized insights to propose strategic improvements, significantly enhancing process efficiency and applicant experience.\n\nEstablished pipeline from Twilio API in Python, retrieving 30K+ messages per month, ETL the data to connect to a dashboard on Power BI with the purpose of recognizing messaging trends, dropout, sentiment analysis, usage by 33 university departments, and billing.\n\nLeveraged web-scraping in R data of 94K pages, to optimize user experiences and drive success, identifying errors and updating SEO content to improve accessibility and usability.\n\nProficiency in Google Analytics and GA4, to monitor and evaluate engagement data for 60,000+ students, 200,000+ alumni, and various stakeholders, translating insights into meaningful visual reports in Looker Studio, for 33 different University departments.\n\n\n\nData Science Tutor.\nBYUI Math Department (Rexburg, ID)\nSep 2023 - Present\n\nAid students with their questions to meet rubrics on assignments from different courses such as: Data Science Programing, Data Wrangling, Big Data, Machine Learning."
   },
   {
     "objectID": "resume.html#projects.",
