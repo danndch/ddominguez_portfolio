@@ -18,29 +18,18 @@
     "href": "projects.html",
     "title": "Senior Project",
     "section": "",
-    "text": "The intention of this project is to help develope through research and engineer some project to help future Data Science students to develope skills more towards the side and direction of Data Engineers without diving completely into the engineering part of the databasese process.\n\n\nHere is a list that it is the potential topics to to be taught in this course, this course has been put together from different books, job posts, articles and research done about what skills could be beneficial to employ and will make them stand out in future jobs interviews.\nData Science vs Data Engineer TEL, ELT, ETLT- TETL? (What is going on?) Data Pipelines and workflows NoSQL? Data Transformation Techniques with SQL Cloud based data services Performance Optimization Data Quality, Testing, and Monitoring",
+    "text": "The objective of this project is to design and construct an educational framework that helps Data Science students develop skills typically used by Data Engineers. This project aims to introduce students to scenarios and a pace of research and learning that keeps a scholarly mindset while incorporating aspects of a professional environment.\n\n\nThis outline has been put together from different sources including academic literature, industry job postings, and IT articles. The mix of this different skills it might be relevant and could boost the value for future students in the job market, thereby enhancing the employability of future graduates. The proposed topics are the following:\n\nData Science vs. Data Engineering\nTEL, ELT, ETL, ETLT?\nData Pipelines and Workflows\nNoSQL Databases?\nData Transformation Techniques with SQL\nCloud-based Data Services\nPerformance Optimization\nData Quality, Testing, and Monitoring\nBig Data Technologies\nData Ingestion Tools\nContainerization and Virtualization\nData Governance and Ethics\nAdvanced Analytics and Machine Learning Operations (MLOps)\nReal-time Data Processing and Analytics\nData Visualization and Reporting\nAPIs for Data Science\nCollaborative Data Science\nData Science vs. Data Engineering\nProject 2\nProject 3\nProject 4\nBack ground and research",
     "crumbs": [
       "Senior Project",
       "DS250 Projects"
     ]
   },
   {
-    "objectID": "projects.html#what-could-be-taught.",
-    "href": "projects.html#what-could-be-taught.",
+    "objectID": "projects.html#potential-topics",
+    "href": "projects.html#potential-topics",
     "title": "Senior Project",
     "section": "",
-    "text": "Here is a list that it is the potential topics to to be taught in this course, this course has been put together from different books, job posts, articles and research done about what skills could be beneficial to employ and will make them stand out in future jobs interviews.\nData Science vs Data Engineer TEL, ELT, ETLT- TETL? (What is going on?) Data Pipelines and workflows NoSQL? Data Transformation Techniques with SQL Cloud based data services Performance Optimization Data Quality, Testing, and Monitoring",
-    "crumbs": [
-      "Senior Project",
-      "DS250 Projects"
-    ]
-  },
-  {
-    "objectID": "projects.html#potential-curriculum-topics",
-    "href": "projects.html#potential-curriculum-topics",
-    "title": "Senior Project",
-    "section": "Potential Curriculum Topics",
-    "text": "Potential Curriculum Topics\nThis outline has been put together from different sources including academic literature, industry job postings, and IT articles. The mix of this different skills it might be relevant and could boost the value for future students in the job market, thereby enhancing the employability of future graduates. The proposed topics are the following:\n\nData Science vs. Data Engineering\nTEL, ELT, ETL, ETLT?\nData Pipelines and Workflows\nNoSQL Databases?\nData Transformation Techniques with SQL\nCloud-based Data Services\nPerformance Optimization\nData Quality, Testing, and Monitoring\nBig Data Technologies\nData Ingestion Tools\nContainerization and Virtualization\nData Governance and Ethics\nAdvanced Analytics and Machine Learning Operations (MLOps)\nReal-time Data Processing and Analytics\nData Visualization and Reporting\nAPIs for Data Science\nCollaborative Data Science\nData Science vs. Data Engineering\nProject 2\nProject 3\nProject 4\nBack ground and research",
+    "text": "This outline has been put together from different sources including academic literature, industry job postings, and IT articles. The mix of this different skills it might be relevant and could boost the value for future students in the job market, thereby enhancing the employability of future graduates. The proposed topics are the following:\n\nData Science vs. Data Engineering\nTEL, ELT, ETL, ETLT?\nData Pipelines and Workflows\nNoSQL Databases?\nData Transformation Techniques with SQL\nCloud-based Data Services\nPerformance Optimization\nData Quality, Testing, and Monitoring\nBig Data Technologies\nData Ingestion Tools\nContainerization and Virtualization\nData Governance and Ethics\nAdvanced Analytics and Machine Learning Operations (MLOps)\nReal-time Data Processing and Analytics\nData Visualization and Reporting\nAPIs for Data Science\nCollaborative Data Science\nData Science vs. Data Engineering\nProject 2\nProject 3\nProject 4\nBack ground and research",
     "crumbs": [
       "Senior Project",
       "DS250 Projects"
