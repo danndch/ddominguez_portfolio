@@ -38,7 +38,7 @@ Jan 2020 - April 2024
 
 Oct 2021- Present
 
-* Stablished a funnel withing GA4 to understand the flow of the Admissions process of the University with the purpose of understand \
+* Designed and implemented a GA4-based analytics funnel to analyze the University Admissions process, understanding the story and identifying key stages where applicants face delays or drop out. Utilized insights to propose strategic improvements, significantly enhancing process efficiency and applicant experience. \
 * Established pipeline from Twilio API in Python, retrieving 30K+ messages per month, ETL the data to connect to a dashboard on Power BI with the purpose of recognizing messaging trends, dropout, sentiment analysis, usage by 33 university departments, and billing.\
 * Leveraged web-scraping in R data of 94K pages, to optimize user experiences and drive success, identifying errors and updating SEO content to improve accessibility and usability.\
 * Proficiency in Google Analytics and GA4, to monitor and evaluate engagement data for 60,000+ students, 200,000+ alumni, and various stakeholders, translating insights into meaningful visual reports in Looker Studio, for 33 different University departments.
