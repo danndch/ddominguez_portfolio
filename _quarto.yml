@@ -10,7 +10,7 @@ website:
 
   page-footer: 
     border: true
-    left: "Your_Name 2023©"
+    left: "Daniel Dominguez"
     right: 
       - icon: linkedin
         href: Your_LinkedIn_URL
@@ -39,11 +39,11 @@ website:
         file: competition.qmd
       
   sidebar:
-    - title: "DS 250 Projects"
+    - title: "Senior Project"
       style: "docked"
       background: light
       contents:
-        - text: "DS250 Projects"
+        - text: "Senior Project"
           file: projects.qmd
         - text: "---"
         - text: "Project 1"
