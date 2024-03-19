@@ -57,7 +57,7 @@ As Data Scientists, our vision is only as clear as the data at our disposal. Dat
 * You don't want to sit and wait: If you provide to your employer a solution more than waiting for the Data Engineer to give you the data you need to work, what if you could provide that solution as well, not having to depend a 100% on someone else gives you freedome and a higher value in the market.
 
 
-## Your Path to Becoming a Data Science Hybrid with Data Ehineering
+## Your Path to Becoming a Data Science Hybrid with Data Engineering 
 
 Embracing SQL and and some other data engineering concepts is not just about enlarging your technical toolbox; it's about expanding your problem-solving skillset. In a data-driven world, these skills enable you to navigate and make sense of the multiple situations, turning data into information which will become decisions that drive progress.
 
@@ -65,104 +65,36 @@ Embracing SQL and and some other data engineering concepts is not just about enl
 
 ### Top industry
 
-C:\Users\Dann_\OneDrive - BYU-Idaho\BYU Idaho\11th Semester W24\Senior Project\ddominguez_portfolio\Images
+Lets take a look at two positions open at TESLA for an internship, they are in the same job post but they ask for two different positions.
+
+![image](C:/Users/Dann_/OneDrive - BYU-Idaho/BYU Idaho/11th Semester W24/Senior Project/ddominguez_portfolio/Images/data_science.png)
 ![image](C:/Users/Dann_/OneDrive - BYU-Idaho/BYU Idaho/11th Semester W24/Senior Project/ddominguez_portfolio/Images/capture.png)
-Lets take a look at a position open at TESLA for an internship:
 
 
+If we were to look into a Ven Diagram we could picture Data Science on one of the sides and Data Engineering in the other, this is it could be taken from out the descriptions and put it into the Data Science or Data Engineering side
 
-fist post 70-90/----------
-second 55-68/----------
-third 50-55/----------
+#### Skills and Tasks Specific to a Data Scientist:
 
-
-
-
-
-
-```{python}
-#| label: project data
-#| code-summary: Read and format project data
-# Include and execute your code here
-df = pd.read_csv("https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv")
-```
-
-__Highlight the Questions and Tasks__
-
-## QUESTION|TASK 1
-
-__COPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE__
-
-_type your results and analysis here_
-
-```{python}
-#| label: Q1
-#| code-summary: Read and format data
-# Include and execute your code here
+Statistical Learning and Bayesian Models: The mention of statistical learning and Bayesian models is more aligned with the data scientist role, where a deep understanding of statistical methods and the ability to apply these methods to extract insights from data is crucial.
+Answering Complex Questions on Fleet Usage and Behavior: This involves not just accessing and processing data but also interpreting it in a way that provides actionable insights, which is a core part of a data scientist's role.
+MLOps Skills: While MLOps can be relevant to both roles, in the context of deploying and managing machine learning models, it leans more towards the data scientist side, especially when it involves model development, validation, and iteration based on statistical principles.
 
 
-```
+#### Skills and Tasks Specific to a Data Engineer:
 
-_include figures in chunks and discuss your findings in the figure._
+Building Scalable Data Pipelines: The emphasis on building scalable data pipelines for deploying fleet health monitoring models is a essential data engineering task, focusing on the infrastructure that allows for efficient data flow and processing.
+Data ELT Pipelines Using Airflow: Creating and maintaining data Extract, Load, Transform (ELT) pipelines, especially with tools like Airflow, is a key data engineering responsibility, ensuring that data is regularly and reliably prepared for analysis.
+Query Optimization and Advanced SQL: While SQL is used by both data scientists and data engineers, the focus on optimizing and undertaking advanced SQL queries, especially on massive datasets, is more characteristic of data engineering, which often deals with the optimization of data access and processing.
 
-```{python}
-#| label: Q1 chart
-#| code-summary: plot example
-#| fig-cap: "My useless chart"
-#| fig-align: center
-# Include and execute your code here
-chart = px.bar(df.head(200),
-    x="name", 
-    y="AK"
-)
-chart.show()
-```
+#### Skills and Tasks Shared Between Both Roles:
 
+Data Analytics and Infrastructure: Both roles involve a level of responsibility for employing data to drive insights and actions, which includes the infrastructure that supports data analytics.
+Use of Tableau and Similar Tools for Dashboards: The creation and maintenance of analytics dashboards are common to both roles, although the focus might differ; data scientists would be more involved in the interpretation of the data, while data engineers would ensure the data is accurately and efficiently presented.
+Working with Cross-Functional Teams: Collaboration with cross-functional teams to support design cycles, provide insights, and support decision-making is essential for both roles, though the nature of the support and insights provided may vary.
 
-```{python}
-#| label: Q1 table
-#| code-summary: table example
-#| tbl-cap: "Not much of a table"
-#| tbl-cap-location: top
-# Include and execute your code here
-mydat = df.head(1000)\
-    .groupby('year')\
-    .sum()\
-    .reset_index()\
-    .tail(10)\
-    .filter(["year", "AK","AR"])
+#### The difference
 
-display(mydat)
-
-```
+The job description establishes a range for the payment, it goes from $20-60 an hour. Just imagine that for being able to understand skills like ETL, stablishing a pipeline (Which is ETL), and sharp your SQL could give you 3 times more money, and you could fix your problems in less time than waiting for someone to complement this tasks, if you are hired of course.
 
 
-## QUESTION|TASK 2
-
-__COPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE__
-
-_type your results and analysis here_
-
-```{python}
-#| label: Q2
-#| code-summary: Read and format data
-# Include and execute your code here
-
-
-```
-
-_include figures in chunks and discuss your findings in the figure._
-
-```{python}
-#| label: Q2 chart
-#| code-summary: plot example
-#| fig-cap: "My useless chart"
-#| fig-align: center
-# Include and execute your code here
-chart = px.bar(df.head(200),
-    x="name", 
-    y="AK"
-)
-chart.show()
-```
 

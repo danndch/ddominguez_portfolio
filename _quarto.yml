@@ -46,7 +46,7 @@ website:
         - text: "Senior Project"
           file: projects.qmd
         - text: "---"
-        - text: "Project 1"
+        - text: "Hybrid Data Scientist"
           file: Projects/project1.qmd
         - text: "---"
         - text: "Project 2"
