@@ -1,7 +1,7 @@
 ---
-title: "Client Report - [Insert Project Title]"
-subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
+title: "Senior Project Post 1"
+subtitle: "The Data Science Engineer"
+author: "Daniel Dominguez"
 format:
   html:
     self-contained: true
@@ -34,10 +34,51 @@ import plotly.express as px
 ```
 
 
-## Elevator pitch
+## Data Science delveig into Data Engineering 
 
-_paste your elevator pitch here_
-_A SHORT (4-5 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS._
+In the rapidly evolving world of Data, where the ability to turn vast amounts of raw data into actionable insights is highly prized. You may know Python, you may know R, but mastering the language of data and understanding the architecture that supports it are not just an advantage but it is essential. SQL and data engineering, is a realm that it is close to Data Science and there are some skills that will set you apart in your future career.
+
+## Why SQL?
+
+SQL, or Structured Query Language, is the cornerstone of data manipulation and retrieval. It's the bridge between the questions you seek to answer and the data that contains those answers. Whether it's understanding customer behavior, predicting market trends, or improving operational efficiency, SQL empowers you to:
+
+* Access Critical Data Quickly: Navigate through complex databases with ease, ensuring that no source of insight is beyond your reach.
+* Communicate Effectively with Data: Speak the universal language understood by databases worldwide, making your analyses more versatile and impactful.
+* Refine Your Analytical Precision: Hone your ability to ask nuanced questions of your data, enabling more precise, targeted analyses.
+
+
+## The Value of Data Engineering Skills
+
+As Data Scientists, our vision is only as clear as the data at our disposal. Data engineering skills could ensure that the data we rely on is accurate, accessible, and ready for analysis. By understanding data pipelines, storage solutions, and data processing, we will:
+
+* Enhance Data Quality and Accessibility: Ensure that the data you use for your analyses is clean, well-structured, and readily available, reducing the time from question to insight.
+* Scale Your Data Efforts: Tackle larger datasets and more complex problems with confidence, knowing that your data infrastructure is robust and scalable.
+* Bridge the Gap Between Data and Decision-Making: Play that role in translating data insights into strategic actions, making your contributions invaluable to any team.
+* You don't want to sit and wait: If you provide to your employer a solution more than waiting for the Data Engineer to give you the data you need to work, what if you could provide that solution as well, not having to depend a 100% on someone else gives you freedome and a higher value in the market.
+
+
+## Your Path to Becoming a Data Science Hybrid with Data Ehineering
+
+Embracing SQL and and some other data engineering concepts is not just about enlarging your technical toolbox; it's about expanding your problem-solving skillset. In a data-driven world, these skills enable you to navigate and make sense of the multiple situations, turning data into information which will become decisions that drive progress.
+
+## Now where is this being used?
+
+### Top industry
+
+C:\Users\Dann_\OneDrive - BYU-Idaho\BYU Idaho\11th Semester W24\Senior Project\ddominguez_portfolio\Images
+![image](C:/Users/Dann_/OneDrive - BYU-Idaho/BYU Idaho/11th Semester W24/Senior Project/ddominguez_portfolio/Images/capture.png)
+Lets take a look at a position open at TESLA for an internship:
+
+
+
+fist post 70-90/----------
+second 55-68/----------
+third 50-55/----------
+
+
+
+
+
 
 ```{python}
 #| label: project data
@@ -125,68 +166,3 @@ chart = px.bar(df.head(200),
 chart.show()
 ```
 
-
-```{python}
-#| label: Q2 table
-#| code-summary: table example
-#| tbl-cap: "Not much of a table"
-#| tbl-cap-location: top
-# Include and execute your code here
-mydat = df.head(1000)\
-    .groupby('year')\
-    .sum()\
-    .reset_index()\
-    .tail(10)\
-    .filter(["year", "AK","AR"])
-
-display(mydat)
-
-```
-
-
-## QUESTION|TASK 3
-
-__COPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE__
-
-_type your results and analysis here_
-
-```{python}
-#| label: Q3
-#| code-summary: Read and format data
-# Include and execute your code here
-
-
-```
-
-_include figures in chunks and discuss your findings in the figure._
-
-```{python}
-#| label: Q3 chart
-#| code-summary: plot example
-#| fig-cap: "My useless chart"
-#| fig-align: center
-# Include and execute your code here
-chart = px.bar(df.head(200),
-    x="name", 
-    y="AK"
-)
-chart.show()
-```
-
-
-```{python}
-#| label: Q3 table
-#| code-summary: table example
-#| tbl-cap: "Not much of a table"
-#| tbl-cap-location: top
-# Include and execute your code here
-mydat = df.head(1000)\
-    .groupby('year')\
-    .sum()\
-    .reset_index()\
-    .tail(10)\
-    .filter(["year", "AK","AR"])
-
-display(mydat)
-
-```

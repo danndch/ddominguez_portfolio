@@ -13,7 +13,7 @@ website:
     left: "Daniel Dominguez"
     right: 
       - icon: linkedin
-        href: Your_LinkedIn_URL
+        href: https://www.linkedin.com/in/dann-dominguez/
 
   navbar:
     background: primary
