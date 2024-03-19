@@ -34,7 +34,7 @@ import plotly.express as px
 ```
 
 
-## Data Science delveig into Data Engineering 
+# Data Science delveig into Data Engineering 
 
 In the rapidly evolving world of Data, where the ability to turn vast amounts of raw data into actionable insights is highly prized. You may know Python, you may know R, but mastering the language of data and understanding the architecture that supports it are not just an advantage but it is essential. SQL and data engineering, is a realm that it is close to Data Science and there are some skills that will set you apart in your future career.
 
@@ -61,9 +61,9 @@ As Data Scientists, our vision is only as clear as the data at our disposal. Dat
 
 Embracing SQL and and some other data engineering concepts is not just about enlarging your technical toolbox; it's about expanding your problem-solving skillset. In a data-driven world, these skills enable you to navigate and make sense of the multiple situations, turning data into information which will become decisions that drive progress.
 
-## Now where is this being used?
+# Now where is this being used?
 
-### Top industry
+## Top industry
 
 Lets take a look at two positions open at TESLA for an internship, they are in the same job post but they ask for two different positions.
 
@@ -73,28 +73,172 @@ Lets take a look at two positions open at TESLA for an internship, they are in t
 
 If we were to look into a Ven Diagram we could picture Data Science on one of the sides and Data Engineering in the other, this is it could be taken from out the descriptions and put it into the Data Science or Data Engineering side
 
-#### Skills and Tasks Specific to a Data Scientist:
+### Skills and Tasks Specific to a Data Scientist:
 
 Statistical Learning and Bayesian Models: The mention of statistical learning and Bayesian models is more aligned with the data scientist role, where a deep understanding of statistical methods and the ability to apply these methods to extract insights from data is crucial.
 Answering Complex Questions on Fleet Usage and Behavior: This involves not just accessing and processing data but also interpreting it in a way that provides actionable insights, which is a core part of a data scientist's role.
 MLOps Skills: While MLOps can be relevant to both roles, in the context of deploying and managing machine learning models, it leans more towards the data scientist side, especially when it involves model development, validation, and iteration based on statistical principles.
 
 
-#### Skills and Tasks Specific to a Data Engineer:
+### Skills and Tasks Specific to a Data Engineer:
 
 Building Scalable Data Pipelines: The emphasis on building scalable data pipelines for deploying fleet health monitoring models is a essential data engineering task, focusing on the infrastructure that allows for efficient data flow and processing.
 Data ELT Pipelines Using Airflow: Creating and maintaining data Extract, Load, Transform (ELT) pipelines, especially with tools like Airflow, is a key data engineering responsibility, ensuring that data is regularly and reliably prepared for analysis.
 Query Optimization and Advanced SQL: While SQL is used by both data scientists and data engineers, the focus on optimizing and undertaking advanced SQL queries, especially on massive datasets, is more characteristic of data engineering, which often deals with the optimization of data access and processing.
 
-#### Skills and Tasks Shared Between Both Roles:
+### Skills and Tasks Shared Between Both Roles:
 
 Data Analytics and Infrastructure: Both roles involve a level of responsibility for employing data to drive insights and actions, which includes the infrastructure that supports data analytics.
 Use of Tableau and Similar Tools for Dashboards: The creation and maintenance of analytics dashboards are common to both roles, although the focus might differ; data scientists would be more involved in the interpretation of the data, while data engineers would ensure the data is accurately and efficiently presented.
 Working with Cross-Functional Teams: Collaboration with cross-functional teams to support design cycles, provide insights, and support decision-making is essential for both roles, though the nature of the support and insights provided may vary.
 
-#### The difference
+### The difference
 
 The job description establishes a range for the payment, it goes from $20-60 an hour. Just imagine that for being able to understand skills like ETL, stablishing a pipeline (Which is ETL), and sharp your SQL could give you 3 times more money, and you could fix your problems in less time than waiting for someone to complement this tasks, if you are hired of course.
 
 
 
+# Material
+
+## Difference on the Data Structures
+
+### Data Lake
+#### Attributes:
+
+A Data Lake is a vast pool of raw, unstructured, and structured data stored in its native format.
+It is designed to store a large amount of data without a predefined schema, allowing you to keep all your data in one place without having to structure it first.
+
+#### Benefits:
+
+* Flexibility: You can store data of all types and structures, making it highly adaptable to changes.
+* Scalability: Capable of handling massive volumes of data, from gigabytes to petabytes.
+* Cost-Effectiveness: Often built on inexpensive storage solutions, making it economical for storing vast amounts of data.
+
+
+#### Uses:
+
+* Ideal for big data and real-time analytics projects.
+* Useful for organizations that want to store all their data without initially knowing how they will use it.
+
+
+### Data Warehouse
+#### Attributes:
+
+A Data Warehouse is a centralized repository for structured, filtered data that has already been processed for a specific purpose.
+It is highly structured and uses a schema-on-write approach, meaning the data is organized and formatted at the time of entry.
+
+#### Benefits:
+
+* Improved Data Quality and Consistency: Due to its structured nature, data is cleaned and transformed, ensuring reliability.
+* Performance: Optimized for complex queries and data analysis, providing fast access to insights.
+* Historical Intelligence: Ideal for storing historical data, enabling trend analysis over time.
+
+#### Uses:
+
+* Suitable for business intelligence, reporting, and data analysis purposes.
+* Used by organizations that need to analyze their data comprehensively to make informed decisions.
+
+
+### Data Mart
+#### Attributes:
+
+A Data Mart is a subset of a data warehouse designed to focus on a specific line of business, department, or subject area.
+It is more tailored and subject-oriented, containing only the data relevant to a particular group or purpose.
+
+#### Benefits:
+
+* Increased Accessibility: More accessible to users due to its focus on a specific domain, making it easier to retrieve relevant information.
+* Faster Query Performance: Smaller size leads to quicker data retrieval, improving efficiency.
+* User-Friendly: Easier for non-technical users to interact with and understand since it's focused on a specific area.
+
+#### Uses:
+
+* Ideal for department-specific reports and analyses, such as sales, finance, or marketing data.
+* Used by departments within organizations that need quick, easy access to specific, relevant data.
+
+
+### Data Fabric
+#### Attributes:
+
+* Data Fabric provides a unified layer of data and connectivity across different platforms and environments, using various technologies and approaches (like metadata).
+* It is designed to provide consistent capabilities across endpoints in a hybrid and multi-cloud environment.
+
+#### Benefits:
+
+* Agility: Enables quick access to data across the organization, regardless of its location.
+* Interoperability: Facilitates seamless data sharing and integration across diverse systems and platforms.
+
+#### Uses:
+
+* Ideal for organizations with complex data ecosystems looking to streamline data access, integration, and management across multiple environments.
+
+
+# ETL VS ELT
+
+## ETL (Extract, Transform, Load)
+
+* Extract: Data is sourced from various origins, such as databases, CRM systems, flat files, or APIs. This stage involves querying data sources, often using SQL for structured databases, and aggregating the data for further processing.
+* Transform: This critical phase involves a series of operations such as cleansing (removing or correcting data errors), deduplication (eliminating duplicate records), normalization (structuring data to reduce redundancy), and aggregation (summarizing detailed data). Complex transformations might include pivoting data formats, merging datasets, or applying business logic to derive new calculated fields. This step is usually performed in a dedicated staging area or a transformation engine, using tools and languages suitable for data manipulation, including SQL, Python, or specialized ETL tools.
+* Load: The final step involves writing the transformed data into a target data warehouse or database. This phase is carefully managed to maintain data integrity and optimize for query performance, often involving SQL operations to insert data into structured schemas designed for analysis.
+
+## Advantages and Challenges:
+
+* Control and Quality: The ETL process allows for extensive control over the transformation logic, ensuring data quality and consistency. This is particularly important in regulated industries or where data accuracy is critical.
+* Performance Consideration: ETL can relieve the target data warehouse from the processing load of transformations. However, the transformation phase can become a bottleneck if not well-optimized, especially with large volumes of data.
+* Tooling and Complexity: While ETL offers robustness and control, it can also introduce complexity, requiring specialized tools and expertise to manage the transformation logic and workflows.
+
+
+## When to Use ETL:
+
+* When data quality and transformation logic are complex and need to be managed meticulously.
+* In environments where the computational capabilities of the target data warehouse are limited or costly.
+* When data processing needs to be done before loading to ensure compliance, security, or data privacy.
+
+
+# ELT (Extract, Load, Transform)
+
+* Extract: Similar to ETL, data is extracted from various sources. The focus here is on speed and efficiency, getting data into the target system as quickly as possible.
+* Load: The extracted data is loaded into the data warehouse in its raw form. Modern data warehouses are designed to handle large volumes of unstructured or semi-structured data, making them well-suited for this approach.
+* Transform: Transformation happens after the data is already in the target system, leveraging the powerful processing capabilities of modern data warehouses. SQL is often used for transformation within the warehouse, allowing data scientists and analysts to apply transformations using familiar query languages. This approach offers the flexibility to transform data as needed for different analyses without pre-defining those transformations.
+
+
+## Advantages and Challenges:
+
+* Scalability and Flexibility: ELT leverages the scalable compute resources of modern cloud-based data warehouses, handling vast amounts of data efficiently. The flexibility to transform data on-the-fly supports agile analytics and data exploration.
+* Speed: By loading data directly into the warehouse, ELT can make data available for analysis more quickly. This is advantageous in fast-paced environments where timely insights are critical.
+* Simplification and Cost: ELT can simplify the data pipeline by reducing the need for a separate transformation layer, potentially lowering infrastructure and maintenance costs. However, this approach requires a robust data warehouse capable of handling intensive compute tasks.
+
+
+## When to Use ELT:
+
+* In big data scenarios where the volume, velocity, and variety of data exceed traditional database capabilities.
+* When using cloud-based data warehouses with high processing power, where the cost of compute resources is outweighed by the need for flexibility and speed.
+* In agile environments where the requirements for data models and analyses change frequently, necessitating a flexible approach to data transformation.
+
+# SQL's Role in ETL and ELT
+SQL plays a crucial role in both ETL and ELT processes, particularly in the transformation phase. In ETL, SQL is used within the transformation engine or staging area to manipulate and prepare data for loading. In ELT, SQL is utilized within the data warehouse itself to transform the data after it has been loaded, taking advantage of the warehouse's compute capabilities.
+
+## The Ongoing Debate
+The debate between ETL and ELT often centers on trade-offs between control and flexibility, scalability and complexity, and the upfront costs versus long-term benefits. The right choice depends on specific project requirements, data characteristics, available infrastructure, and strategic priorities.
+
+ETL is traditionally preferred for scenarios where data integrity, privacy, and compliance are paramount, and where transformations need to be tightly controlled and monitored. It's ideal for environments where the cleanliness and structure of the data are critical before it can be stored or analyzed, such as in financial services or healthcare sectors where data accuracy and privacy are non-negotiable.
+
+ELT, on the other hand, is favored in contexts where the agility and flexibility of data analysis are prioritized. The ability to store raw data and transform it as needed allows for a more explorative and iterative approach to data analytics. This is particularly beneficial in dynamic industries like e-commerce or social media, where business needs can change rapidly, and the ability to pivot and explore new data models quickly is a competitive advantage.
+
+
+## Practical Examples
+
+
+ETL Example: A financial institution might use ETL to integrate customer transaction data from various sources. The transformation stage would include validating transaction codes, converting currencies, and anonymizing personal information to comply with data protection regulations before loading the clean, transformed data into a data warehouse for analysis and reporting.
+
+ELT Example: A digital marketing firm might use ELT to analyze web traffic data. Raw clickstream data is ingested directly into a cloud-based data warehouse, and SQL queries are used to transform this data on-demand, creating different views for analyzing user behavior, campaign performance, and website engagement.
+
+
+
+
+
+
+
+# Sources
+
+https://learning.oreilly.com/playlists/102dbc35-5c2c-47a2-9a9d-6711d369832e/
