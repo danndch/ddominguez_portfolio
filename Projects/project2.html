@@ -4689,7 +4689,7 @@ vertical-align: -.125em;
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Projects/project2.html">SQL Project</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Projects/project2.html">Data Products</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -4741,7 +4741,7 @@ vertical-align: -.125em;
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Projects/project2.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">SQL Project</span></a>
+ <span class="menu-text">Data Products</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
@@ -4845,49 +4845,49 @@ vertical-align: -.125em;
 <h3 class="anchored" data-anchor-id="where">WHERE</h3>
 <p>The WHERE clause filters records to include only those that meet certain conditions. It helps in narrowing down the results based on specified criteria, making the query output more relevant.</p>
 <p>Example:</p>
-<p>SELECT * <br> FROM Employees WHERE Department = ‘Marketing’;<br></p>
+<p>SELECT * <br> FROM Employees <br> WHERE Department = ‘Marketing’;<br></p>
 <p>This query retrieves all columns for employees who work in the Marketing department.</p>
 </section>
 <section id="having" class="level3">
 <h3 class="anchored" data-anchor-id="having">HAVING</h3>
 <p>The HAVING clause is used to filter groups of rows after they’ve been grouped by a GROUP BY clause. It’s similar to the WHERE clause but is applicable to aggregated data. HAVING is commonly used with functions like SUM(), AVG(), COUNT(), etc.</p>
 <p>Example:</p>
-<p>&amp;nbsp SELECT Department, COUNT(EmployeeID) AS NumberOfEmployees <br> &amp;nbsp FROM Employees <br> &amp;nbsp GROUP BY Department <br> &amp;nbsp HAVING COUNT(EmployeeID) &gt; 10; <br></p>
+<p>SELECT Department, COUNT(EmployeeID) AS NumberOfEmployees <br> FROM Employees <br> GROUP BY Department <br> HAVING COUNT(EmployeeID) &gt; 10; <br></p>
 <p>This query counts the number of employees in each department and only includes those departments with more than 10 employees.</p>
 </section>
 <section id="group-by" class="level3">
 <h3 class="anchored" data-anchor-id="group-by">GROUP BY</h3>
 <p>The GROUP BY clause groups rows that have the same values in specified columns into summary rows, like “find the number of employees in each department”. It is often used with aggregate functions (COUNT(), MAX(), SUM(), AVG()).</p>
 <p>Example:</p>
-<p>&amp;nbsp SELECT Department, AVG(Salary) AS AverageSalary <br> &amp;nbsp FROM Employees <br> &amp;nbsp GROUP BY Department; <br></p>
+<p>SELECT Department, AVG(Salary) AS AverageSalary <br> FROM Employees <br> GROUP BY Department; <br></p>
 <p>This query calculates the average salary within each department.</p>
 </section>
 <section id="order-by" class="level3">
 <h3 class="anchored" data-anchor-id="order-by">ORDER BY</h3>
 <p>The ORDER BY clause is used to sort the result set of a query by one or more columns. It can sort the results in ascending (ASC) or descending (DESC) order. If no direction is specified, ASC is assumed by default.</p>
 <p>Example:</p>
-<p>&amp;nbsp SELECT FirstName, LastName, Salary <br> &amp;nbsp FROM Employees <br> &amp;nbsp ORDER BY Salary DESC; <br></p>
+<p>SELECT FirstName, LastName, Salary <br> FROM Employees <br> ORDER BY Salary DESC; <br></p>
 <p>This query retrieves employee names and salaries, sorted by salary in descending order.</p>
 </section>
 <section id="limitoffset" class="level3">
 <h3 class="anchored" data-anchor-id="limitoffset">LIMIT/OFFSET</h3>
 <p>The LIMIT clause is used to constrain the number of rows returned by a query. This is useful in large datasets to retrieve only a subset of rows. The OFFSET clause is used in conjunction with LIMIT to skip a specific number of rows before starting to return rows from the query.</p>
 <p>Example:</p>
-<p>&amp;nbsp SELECT * <br> &amp;nbsp FROM Employees <br> &amp;nbsp LIMIT 10 OFFSET 5; <br> This query skips the first 5 rows and then retrieves the next 10 rows from the Employees table.</p>
+<p>SELECT * <br> FROM Employees <br> LIMIT 10 OFFSET 5; <br> This query skips the first 5 rows and then retrieves the next 10 rows from the Employees table.</p>
 </section>
 </section>
 <section id="subqueries" class="level2">
 <h2 class="anchored" data-anchor-id="subqueries">Subqueries</h2>
 <p>A subquery is a query embedded within another query. It can be used in various parts of the main query, including the SELECT, FROM, and WHERE clauses. Subqueries are typically enclosed in parentheses and can return scalar values, single columns, single rows, or tables, depending on their placement and purpose in the main query.</p>
 <p>Example of a subquery in a WHERE clause:</p>
-<p>&amp;nbsp SELECT * <br> &amp;nbsp FROM Employees <br> &amp;nbsp WHERE DepartmentID IN (SELECT DepartmentID FROM Departments WHERE Name = ‘Research’);<br></p>
+<p>SELECT * <br> FROM Employees <br> WHERE DepartmentID IN (SELECT DepartmentID FROM Departments WHERE Name = ‘Research’);<br></p>
 <p>In this example, the subquery selects DepartmentIDs from the Departments table where the department name is ‘Research’. The main query then uses these IDs to filter employees from those specific departments.</p>
 </section>
 <section id="nested-queries" class="level2">
 <h2 class="anchored" data-anchor-id="nested-queries">Nested Queries</h2>
 <p>A nested query refers to a broader category of queries that contain other queries, and it can encompass subqueries as one of its forms. The term “nested query” can also specifically refer to queries nested within FROM clauses, where a subquery is used to create a temporary table that the outer query can then join to or operate on.</p>
 <p>Example of a nested query in a FROM clause:</p>
-<p>&amp;nbspSELECT AvgSalaries.Department, Employee.Name, Employee.Salary <br> &amp;nbspFROM Employees AS Employee <br> &amp;nbspJOIN ( <br> &amp;nbsp&amp;nbsp SELECT DepartmentID, AVG(Salary) AS AverageSalary <br> &amp;nbsp&amp;nbsp FROM Employees <br> &amp;nbsp&amp;nbsp GROUP BY DepartmentID <br> &amp;nbsp) AS AvgSalaries ON Employee.DepartmentID = AvgSalaries.DepartmentID <br> &amp;nbspWHERE Employee.Salary &gt; AvgSalaries.AverageSalary; <br></p>
+<p>SELECT AvgSalaries.Department, Employee.Name, Employee.Salary <br> FROM Employees AS Employee <br> JOIN ( <br> SELECT DepartmentID, AVG(Salary) AS AverageSalary <br> FROM Employees <br> GROUP BY DepartmentID <br> ) AS AvgSalaries ON Employee.DepartmentID = AvgSalaries.DepartmentID <br> WHERE Employee.Salary &gt; AvgSalaries.AverageSalary; <br></p>
 <p>In this example, the nested query calculates the average salary per department and creates a temporary table (AvgSalaries) with this information. The outer query then selects employees who earn more than the average salary in their respective departments.</p>
 </section>
 <section id="comparison" class="level2">
