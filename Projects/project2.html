@@ -8,7 +8,7 @@
 
 <meta name="author" content="Daniel Dominguez">
 
-<title>Daniel Dominguez Portfolio - Senior Project Post 3</title>
+<title>Daniel Dominguez Portfolio - Senior Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -4699,8 +4699,8 @@ vertical-align: -.125em;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-right">
-      <h1 class="title">Senior Project Post 3</h1>
-            <p class="subtitle lead">SQL in Action</p>
+      <h1 class="title">Senior Project</h1>
+            <p class="subtitle lead">Data Products</p>
                       </div>
   </div>
     
@@ -4769,33 +4769,195 @@ vertical-align: -.125em;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sql" id="toc-sql">SQL</a>
+  <li><a href="#data-products-and-its-parts" id="toc-data-products-and-its-parts">Data Products and its’ parts</a>
   <ul>
-  <li><a href="#a-little-visit-down-memory-lane-with-sql" id="toc-a-little-visit-down-memory-lane-with-sql">A little visit down memory lane with SQL</a></li>
-  <li><a href="#sub-queries" id="toc-sub-queries">Sub Queries</a></li>
-  <li><a href="#nested-queries" id="toc-nested-queries">Nested Queries</a></li>
-  <li><a href="#project" id="toc-project">Project</a></li>
+  <li><a href="#the-key-characteristics-of-a-data-product-include" id="toc-the-key-characteristics-of-a-data-product-include">The key characteristics of a data product include:</a></li>
+  <li><a href="#sql" id="toc-sql">SQL</a></li>
+  <li><a href="#a-little-visit-down-memory-lane-with-sql" id="toc-a-little-visit-down-memory-lane-with-sql">A little visit down memory lane with SQL</a>
+  <ul>
+  <li><a href="#select" id="toc-select">SELECT</a></li>
+  <li><a href="#fromjoin" id="toc-fromjoin">FROM/JOIN</a></li>
+  <li><a href="#where" id="toc-where">WHERE</a></li>
+  <li><a href="#having" id="toc-having">HAVING</a></li>
+  <li><a href="#group-by" id="toc-group-by">GROUP BY</a></li>
+  <li><a href="#order-by" id="toc-order-by">ORDER BY</a></li>
+  <li><a href="#limitoffset" id="toc-limitoffset">LIMIT/OFFSET</a></li>
   </ul></li>
+  <li><a href="#subqueries" id="toc-subqueries">Subqueries</a></li>
+  <li><a href="#nested-queries" id="toc-nested-queries">Nested Queries</a></li>
+  <li><a href="#comparison" id="toc-comparison">Comparison</a></li>
+  <li><a href="#apis" id="toc-apis">APIs</a>
+  <ul>
+  <li><a href="#components-of-an-api-call" id="toc-components-of-an-api-call">Components of an API Call:</a></li>
+  <li><a href="#advantages-of-using-apis" id="toc-advantages-of-using-apis">Advantages of Using APIs:</a></li>
+  </ul></li>
+  <li><a href="#stages-of-a-data-pipeline" id="toc-stages-of-a-data-pipeline">Stages of a Data Pipeline:</a>
+  <ul>
+  <li><a href="#advantages-of-data-pipelines" id="toc-advantages-of-data-pipelines">Advantages of Data Pipelines:</a></li>
+  </ul></li>
+  <li><a href="#pushing-back-data-to-a-server-data-warehouse-or-data-mart" id="toc-pushing-back-data-to-a-server-data-warehouse-or-data-mart">Pushing Back Data to a Server, Data Warehouse, or Data Mart</a></li>
+  <li><a href="#important-parts-of-machine-learning" id="toc-important-parts-of-machine-learning">Important parts of Machine Learning</a>
+  <ul>
+  <li><a href="#data-enrichment" id="toc-data-enrichment">Data Enrichment</a></li>
+  <li><a href="#feature-engineering" id="toc-feature-engineering">Feature Engineering</a></li>
+  <li><a href="#data-enrichment-vs-feature-engineering" id="toc-data-enrichment-vs-feature-engineering">Data Enrichment vs Feature Engineering</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#sources" id="toc-sources">Sources</a></li>
   </ul>
 </nav>
-<section id="sql" class="level1">
-<h1>SQL</h1>
+<section id="data-products-and-its-parts" class="level1">
+<h1>Data Products and its’ parts</h1>
+<p>A data product in Data Science is a product that facilitates an end goal through the use of data. It is essentially a technical asset that makes use of data as its core component to solve a specific problem or fulfill a particular need for its users. Data products can be as simple as a report generated from data analyses, or as complex as a machine learning model that powers a recommendation system in an application.</p>
+<p>Data products are the bridge between raw data and practical applications. They are essential for applying the theoretical aspects of data science to solve real-world problems. By turning data into actionable insights, data products enable businesses and organizations to make informed decisions, optimize operations, and enhance user experiences. As such, the development and management of data products is a crucial aspect of the data science field, requiring a blend of technical skills, domain expertise, and an understanding of user needs.</p>
+<section id="the-key-characteristics-of-a-data-product-include" class="level2">
+<h2 class="anchored" data-anchor-id="the-key-characteristics-of-a-data-product-include">The key characteristics of a data product include:</h2>
+<ul>
+<li><p>Data-Driven: At its core, a data product uses data to function. This data can be static or dynamic, and the product’s effectiveness often depends on the quality and relevance of this data.</p></li>
+<li><p>Actionable Insights: Unlike raw data or basic analyses, a data product provides insights that are actionable. This means that users can make decisions or take actions based on the output of the data product.</p></li>
+<li><p>User-Focused: Data products are designed with the end-user in mind, ensuring that they are accessible, understandable, and valuable to the intended audience. This often involves user interface design, data visualization, and user experience optimization.</p></li>
+<li><p>Automated: Many data products automate processes that would otherwise require manual data analysis, saving time and reducing the potential for human error.</p></li>
+<li><p>Scalable: As data grows or as the number of users increases, a well-designed data product can scale to accommodate these changes without losing performance or reliability.</p></li>
+</ul>
+</section>
+<section id="sql" class="level2">
+<h2 class="anchored" data-anchor-id="sql">SQL</h2>
+<p>Diving into SQL (Structured Query Language) is like learning the grammar of data speak. It’s the go to language for communicate to databases, asking them about the information they hold. Whether you’re inquiring about customer behaviors, financial transactions, or anything in between, SQL helps you pose the questions and understand the responses. With SQL, you can sift through mountains of data to find the nuggets of insight that drive strategies and decisions, all of this is always done by a few well-crafted queries.</p>
+</section>
 <section id="a-little-visit-down-memory-lane-with-sql" class="level2">
 <h2 class="anchored" data-anchor-id="a-little-visit-down-memory-lane-with-sql">A little visit down memory lane with SQL</h2>
+<p>The key parts of an SQL query provides a deeper understanding of how data is manipulated and retrieved from a database. Each component plays a crucial role in shaping the output of the query.</p>
+<section id="select" class="level3">
+<h3 class="anchored" data-anchor-id="select">SELECT</h3>
+<p>The SELECT statement specifies the columns of data you want to retrieve from one or more tables in a database. It’s the starting point of most queries and defines which fields should be included in the output. You can use SELECT * to retrieve all columns or specify individual column names separated by commas for a more tailored output.</p>
+<p>Example:</p>
+<p>SELECT FirstName, LastName FROM Employees; This query retrieves the FirstName and LastName columns from the Employees table.</p>
 </section>
-<section id="sub-queries" class="level2">
-<h2 class="anchored" data-anchor-id="sub-queries">Sub Queries</h2>
+<section id="fromjoin" class="level3">
+<h3 class="anchored" data-anchor-id="fromjoin">FROM/JOIN</h3>
+<p>The FROM clause specifies the table(s) from which to retrieve data. When data needs to be combined from multiple tables, the JOIN clause is used. There are several types of joins, including INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN, each serving different purposes in terms of how tables are merged based on matching data in specified columns.</p>
+<p>Example:</p>
+<p>SELECT Orders.OrderID, Customers.CustomerName FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID; This query retrieves order IDs from the Orders table and the corresponding customer names by joining the Orders table with the Customers table on the CustomerID column.</p>
+</section>
+<section id="where" class="level3">
+<h3 class="anchored" data-anchor-id="where">WHERE</h3>
+<p>The WHERE clause filters records to include only those that meet certain conditions. It helps in narrowing down the results based on specified criteria, making the query output more relevant.</p>
+<p>Example:</p>
+<p>SELECT * FROM Employees WHERE Department = ‘Marketing’; This query retrieves all columns for employees who work in the Marketing department.</p>
+</section>
+<section id="having" class="level3">
+<h3 class="anchored" data-anchor-id="having">HAVING</h3>
+<p>The HAVING clause is used to filter groups of rows after they’ve been grouped by a GROUP BY clause. It’s similar to the WHERE clause but is applicable to aggregated data. HAVING is commonly used with functions like SUM(), AVG(), COUNT(), etc.</p>
+<p>Example:</p>
+<p>SELECT Department, COUNT(EmployeeID) AS NumberOfEmployees FROM Employees GROUP BY Department HAVING COUNT(EmployeeID) &gt; 10; This query counts the number of employees in each department and only includes those departments with more than 10 employees.</p>
+</section>
+<section id="group-by" class="level3">
+<h3 class="anchored" data-anchor-id="group-by">GROUP BY</h3>
+<p>The GROUP BY clause groups rows that have the same values in specified columns into summary rows, like “find the number of employees in each department”. It is often used with aggregate functions (COUNT(), MAX(), SUM(), AVG()).</p>
+<p>Example:</p>
+<p>SELECT Department, AVG(Salary) AS AverageSalary FROM Employees GROUP BY Department; This query calculates the average salary within each department.</p>
+</section>
+<section id="order-by" class="level3">
+<h3 class="anchored" data-anchor-id="order-by">ORDER BY</h3>
+<p>The ORDER BY clause is used to sort the result set of a query by one or more columns. It can sort the results in ascending (ASC) or descending (DESC) order. If no direction is specified, ASC is assumed by default.</p>
+<p>Example:</p>
+<p>SELECT FirstName, LastName, Salary FROM Employees ORDER BY Salary DESC; This query retrieves employee names and salaries, sorted by salary in descending order.</p>
+</section>
+<section id="limitoffset" class="level3">
+<h3 class="anchored" data-anchor-id="limitoffset">LIMIT/OFFSET</h3>
+<p>The LIMIT clause is used to constrain the number of rows returned by a query. This is useful in large datasets to retrieve only a subset of rows. The OFFSET clause is used in conjunction with LIMIT to skip a specific number of rows before starting to return rows from the query.</p>
+<p>Example:</p>
+<p>SELECT * FROM Employees LIMIT 10 OFFSET 5; This query skips the first 5 rows and then retrieves the next 10 rows from the Employees table.</p>
+</section>
+</section>
+<section id="subqueries" class="level2">
+<h2 class="anchored" data-anchor-id="subqueries">Subqueries</h2>
+<p>A subquery is a query embedded within another query. It can be used in various parts of the main query, including the SELECT, FROM, and WHERE clauses. Subqueries are typically enclosed in parentheses and can return scalar values, single columns, single rows, or tables, depending on their placement and purpose in the main query.</p>
+<p>Example of a subquery in a WHERE clause:</p>
+<p>SELECT * FROM Employees WHERE DepartmentID IN (SELECT DepartmentID FROM Departments WHERE Name = ‘Research’);</p>
+<p>In this example, the subquery selects DepartmentIDs from the Departments table where the department name is ‘Research’. The main query then uses these IDs to filter employees from those specific departments.</p>
 </section>
 <section id="nested-queries" class="level2">
 <h2 class="anchored" data-anchor-id="nested-queries">Nested Queries</h2>
+<p>A nested query refers to a broader category of queries that contain other queries, and it can encompass subqueries as one of its forms. The term “nested query” can also specifically refer to queries nested within FROM clauses, where a subquery is used to create a temporary table that the outer query can then join to or operate on.</p>
+<p>Example of a nested query in a FROM clause:</p>
+<p>SELECT AvgSalaries.Department, Employee.Name, Employee.Salary FROM Employees AS Employee JOIN ( SELECT DepartmentID, AVG(Salary) AS AverageSalary FROM Employees GROUP BY DepartmentID ) AS AvgSalaries ON Employee.DepartmentID = AvgSalaries.DepartmentID WHERE Employee.Salary &gt; AvgSalaries.AverageSalary;</p>
+<p>In this example, the nested query calculates the average salary per department and creates a temporary table (AvgSalaries) with this information. The outer query then selects employees who earn more than the average salary in their respective departments.</p>
 </section>
-<section id="project" class="level2">
-<h2 class="anchored" data-anchor-id="project">Project</h2>
-<p>Data Maturity</p>
-<p>Caps Pipeline (APIS) Incest Push back Data Enrichment VS Feature Enginering Propentionalization</p>
+<section id="comparison" class="level2">
+<h2 class="anchored" data-anchor-id="comparison">Comparison</h2>
+<ul>
+<li>Scope: Subqueries can be considered a specific type of nested query. While all subqueries are nested queries, not all nested queries are subqueries, especially when considering the broader use of nesting in SQL queries.</li>
+<li>Usage: Subqueries are often used for returning specific values that the main query can use for comparison or filtering, whereas nested queries, particularly those in the FROM clause, are used to create temporary tables for the main query to interact with.</li>
+<li>Complexity: Nested queries, especially those used as temporary tables, can be more complex and might involve aggregation, grouping, or additional joins within the nested part, whereas subqueries might be simpler, returning a single value or a set of values for the main query to use.</li>
+<li>In summary, while the terms subquery and nested query are often used interchangeably, the distinction usually lies in the specific use case and complexity. Subqueries are a subset of nested queries, primarily used within WHERE, SELECT, and FROM clauses for filtering, selection, or temporary table creation.</li>
+</ul>
+</section>
+<section id="apis" class="level2">
+<h2 class="anchored" data-anchor-id="apis">APIs</h2>
+<p>Application Programming Interfaces (APIs) serve as the conduit through which different software systems interact, based on a set of defined protocols and rules. APIs facilitate the seamless exchange of data and functionality between disparate systems, making them integral to modern software development.</p>
+<section id="components-of-an-api-call" class="level3">
+<h3 class="anchored" data-anchor-id="components-of-an-api-call">Components of an API Call:</h3>
+<p>Endpoint: The specific URL where the API can be accessed. It represents the specific function or resource you wish to interact with. Headers: Contain metadata for the API call, such as content type, response format, and authentication tokens (API keys). Body: Essential for POST or PUT requests, the body contains the data to be sent to the API. Example: Consider a weather forecasting application that uses a third-party API to fetch weather data. The application might make a GET request to https://api.weather.com/v2/forecast?location=NewYork with headers containing an API key. The response could include data like temperature, humidity, and forecasts, which the application then displays to the user.</p>
+</section>
+<section id="advantages-of-using-apis" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-of-using-apis">Advantages of Using APIs:</h3>
+<p>Integration: APIs enable seamless integration of third-party services or data, enriching your application’s capabilities without the need for extensive development. Automation: Tasks can be automated by scripting interactions with APIs, saving time and reducing the potential for human error. Flexibility: APIs allow for the extension of an application’s functionality, enabling customization and scalability. The Pipeline from the API or Server A data pipeline is an orchestrated set of operations designed to move and transform data from its source to a destination, such as a database or data warehouse. It typically involves stages like data extraction, transformation, and loading (ETL).</p>
+</section>
+</section>
+<section id="stages-of-a-data-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="stages-of-a-data-pipeline">Stages of a Data Pipeline:</h2>
+<p>Extraction: Data is gathered from various sources, which could include databases, APIs, or flat files. Transformation: The raw data is cleaned, enriched, and transformed into a format suitable for analysis. This might involve filtering out irrelevant data, converting data types, or aggregating information. Loading: The transformed data is stored in a structured form in a target system for further analysis or reporting. Example: A retail company might extract sales data from its online and physical stores (via APIs or direct database access), transform the data to calculate total sales by region and category, and load the results into a data warehouse for analysis.</p>
+<section id="advantages-of-data-pipelines" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-of-data-pipelines">Advantages of Data Pipelines:</h3>
+<ul>
+<li>Efficiency: Automating the flow of data reduces manual tasks and speeds up data processing.</li>
+<li>Consistency: Ensures that all data is processed in a uniform manner, improving data quality and reliability.</li>
+<li>Scalability: Can handle increasing volumes of data by scaling resources up or down as needed.</li>
+</ul>
+</section>
+</section>
+<section id="pushing-back-data-to-a-server-data-warehouse-or-data-mart" class="level2">
+<h2 class="anchored" data-anchor-id="pushing-back-data-to-a-server-data-warehouse-or-data-mart">Pushing Back Data to a Server, Data Warehouse, or Data Mart</h2>
+<p>After processing and analysis, data often needs to be stored in a structured and accessible form. This could involve:</p>
+<ul>
+<li>Updating an operational database to reflect new insights or changes.</li>
+<li>Storing aggregated or analyzed data in a data warehouse, making it available for complex queries and strategic decision-making.</li>
+<li>Creating data marts, which are subsets of data warehouses tailored to the specific needs of different departments or functions.</li>
+</ul>
+<p>Example: After analyzing sales data, a business might update its inventory database to reflect items that need restocking. It might also store detailed sales analysis in a data warehouse for use in strategic planning and create a marketing-specific data mart focusing on customer purchase patterns.</p>
+<p>Advantages:</p>
+<ul>
+<li>Accessibility: Storing processed data makes it readily accessible for decision-making, reporting, and further analysis.</li>
+<li>Performance: Separating operational databases from analytical stores (data warehouses) improves performance in both systems.</li>
+<li>Security: Data warehouses and marts can implement specific security measures appropriate for the sensitivity of the stored data.</li>
+</ul>
+</section>
+<section id="important-parts-of-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="important-parts-of-machine-learning">Important parts of Machine Learning</h2>
+<section id="data-enrichment" class="level3">
+<h3 class="anchored" data-anchor-id="data-enrichment">Data Enrichment</h3>
+<p>Data Enrichment is the process of augmenting your existing dataset with additional data from external sources to provide more context and depth. For instance, adding socioeconomic data to customer profiles can offer more insights into customer behavior and preferences.</p>
+<p>Advantages:</p>
+<p>Enhanced Insights: Provides a more rounded view of the data subjects, leading to more accurate analyses and predictions. Improved Decision Making: Deeper data context can lead to better-informed strategic decisions.</p>
+</section>
+<section id="feature-engineering" class="level3">
+<h3 class="anchored" data-anchor-id="feature-engineering">Feature Engineering</h3>
+<p>Feature Engineering involves creating new features from raw data to improve the performance of machine learning models. Techniques might include aggregating data points, decomposing features (e.g., splitting dates into day and month), or transforming variables (e.g., log transformations).</p>
+<p>Advantages:</p>
+<p>Model Accuracy: Properly engineered features can significantly improve model performance. Interpretability: Well-chosen features can make models more understandable by highlighting the underlying factors that drive predictions.</p>
+</section>
+<section id="data-enrichment-vs-feature-engineering" class="level3">
+<h3 class="anchored" data-anchor-id="data-enrichment-vs-feature-engineering">Data Enrichment vs Feature Engineering</h3>
+<p>While both processes aim to improve data quality, data enrichment broadens the dataset with new data, providing more dimensions for analysis. Feature engineering, on the other hand, works on the existing dataset, transforming it into a more model-friendly format. The choice between them depends on whether the need is for more data or for transforming existing data into a more useful form. Both are crucial in different stages of the data preparation process for machine learning.</p>
+</section>
+</section>
+</section>
+<section id="sources" class="level1">
+<h1>Sources</h1>
+<p>https://learning.oreilly.com/playlists/102dbc35-5c2c-47a2-9a9d-6711d369832e/</p>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
