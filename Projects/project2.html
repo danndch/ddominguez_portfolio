@@ -4831,57 +4831,63 @@ vertical-align: -.125em;
 <h3 class="anchored" data-anchor-id="select">SELECT</h3>
 <p>The SELECT statement specifies the columns of data you want to retrieve from one or more tables in a database. It’s the starting point of most queries and defines which fields should be included in the output. You can use SELECT * to retrieve all columns or specify individual column names separated by commas for a more tailored output.</p>
 <p>Example:</p>
-<p>SELECT FirstName, LastName FROM Employees; This query retrieves the FirstName and LastName columns from the Employees table.</p>
+<p>SELECT FirstName, LastName <br> FROM Employees; <br></p>
+<p>This query retrieves the FirstName and LastName columns from the Employees table.</p>
 </section>
 <section id="fromjoin" class="level3">
 <h3 class="anchored" data-anchor-id="fromjoin">FROM/JOIN</h3>
 <p>The FROM clause specifies the table(s) from which to retrieve data. When data needs to be combined from multiple tables, the JOIN clause is used. There are several types of joins, including INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN, each serving different purposes in terms of how tables are merged based on matching data in specified columns.</p>
 <p>Example:</p>
-<p>SELECT Orders.OrderID, Customers.CustomerName FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID; This query retrieves order IDs from the Orders table and the corresponding customer names by joining the Orders table with the Customers table on the CustomerID column.</p>
+<p>SELECT Orders.OrderID, Customers.CustomerName <br> FROM Orders <br> INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID; <br></p>
+<p>This query retrieves order IDs from the Orders table and the corresponding customer names by joining the Orders table with the Customers table on the CustomerID column.</p>
 </section>
 <section id="where" class="level3">
 <h3 class="anchored" data-anchor-id="where">WHERE</h3>
 <p>The WHERE clause filters records to include only those that meet certain conditions. It helps in narrowing down the results based on specified criteria, making the query output more relevant.</p>
 <p>Example:</p>
-<p>SELECT * FROM Employees WHERE Department = ‘Marketing’; This query retrieves all columns for employees who work in the Marketing department.</p>
+<p>SELECT * <br> FROM Employees WHERE Department = ‘Marketing’;<br></p>
+<p>This query retrieves all columns for employees who work in the Marketing department.</p>
 </section>
 <section id="having" class="level3">
 <h3 class="anchored" data-anchor-id="having">HAVING</h3>
 <p>The HAVING clause is used to filter groups of rows after they’ve been grouped by a GROUP BY clause. It’s similar to the WHERE clause but is applicable to aggregated data. HAVING is commonly used with functions like SUM(), AVG(), COUNT(), etc.</p>
 <p>Example:</p>
-<p>SELECT Department, COUNT(EmployeeID) AS NumberOfEmployees FROM Employees GROUP BY Department HAVING COUNT(EmployeeID) &gt; 10; This query counts the number of employees in each department and only includes those departments with more than 10 employees.</p>
+<p>&amp;nbsp SELECT Department, COUNT(EmployeeID) AS NumberOfEmployees <br> &amp;nbsp FROM Employees <br> &amp;nbsp GROUP BY Department <br> &amp;nbsp HAVING COUNT(EmployeeID) &gt; 10; <br></p>
+<p>This query counts the number of employees in each department and only includes those departments with more than 10 employees.</p>
 </section>
 <section id="group-by" class="level3">
 <h3 class="anchored" data-anchor-id="group-by">GROUP BY</h3>
 <p>The GROUP BY clause groups rows that have the same values in specified columns into summary rows, like “find the number of employees in each department”. It is often used with aggregate functions (COUNT(), MAX(), SUM(), AVG()).</p>
 <p>Example:</p>
-<p>SELECT Department, AVG(Salary) AS AverageSalary FROM Employees GROUP BY Department; This query calculates the average salary within each department.</p>
+<p>&amp;nbsp SELECT Department, AVG(Salary) AS AverageSalary <br> &amp;nbsp FROM Employees <br> &amp;nbsp GROUP BY Department; <br></p>
+<p>This query calculates the average salary within each department.</p>
 </section>
 <section id="order-by" class="level3">
 <h3 class="anchored" data-anchor-id="order-by">ORDER BY</h3>
 <p>The ORDER BY clause is used to sort the result set of a query by one or more columns. It can sort the results in ascending (ASC) or descending (DESC) order. If no direction is specified, ASC is assumed by default.</p>
 <p>Example:</p>
-<p>SELECT FirstName, LastName, Salary FROM Employees ORDER BY Salary DESC; This query retrieves employee names and salaries, sorted by salary in descending order.</p>
+<p>&amp;nbsp SELECT FirstName, LastName, Salary <br> &amp;nbsp FROM Employees <br> &amp;nbsp ORDER BY Salary DESC; <br></p>
+<p>This query retrieves employee names and salaries, sorted by salary in descending order.</p>
 </section>
 <section id="limitoffset" class="level3">
 <h3 class="anchored" data-anchor-id="limitoffset">LIMIT/OFFSET</h3>
 <p>The LIMIT clause is used to constrain the number of rows returned by a query. This is useful in large datasets to retrieve only a subset of rows. The OFFSET clause is used in conjunction with LIMIT to skip a specific number of rows before starting to return rows from the query.</p>
 <p>Example:</p>
-<p>SELECT * FROM Employees LIMIT 10 OFFSET 5; This query skips the first 5 rows and then retrieves the next 10 rows from the Employees table.</p>
+<p>&amp;nbsp SELECT * <br> &amp;nbsp FROM Employees <br> &amp;nbsp LIMIT 10 OFFSET 5; <br> This query skips the first 5 rows and then retrieves the next 10 rows from the Employees table.</p>
 </section>
 </section>
 <section id="subqueries" class="level2">
 <h2 class="anchored" data-anchor-id="subqueries">Subqueries</h2>
 <p>A subquery is a query embedded within another query. It can be used in various parts of the main query, including the SELECT, FROM, and WHERE clauses. Subqueries are typically enclosed in parentheses and can return scalar values, single columns, single rows, or tables, depending on their placement and purpose in the main query.</p>
 <p>Example of a subquery in a WHERE clause:</p>
-<p>SELECT * FROM Employees WHERE DepartmentID IN (SELECT DepartmentID FROM Departments WHERE Name = ‘Research’);</p>
+<p>&amp;nbsp SELECT * <br> &amp;nbsp FROM Employees <br> &amp;nbsp WHERE DepartmentID IN (SELECT DepartmentID FROM Departments WHERE Name = ‘Research’);<br></p>
 <p>In this example, the subquery selects DepartmentIDs from the Departments table where the department name is ‘Research’. The main query then uses these IDs to filter employees from those specific departments.</p>
 </section>
 <section id="nested-queries" class="level2">
 <h2 class="anchored" data-anchor-id="nested-queries">Nested Queries</h2>
 <p>A nested query refers to a broader category of queries that contain other queries, and it can encompass subqueries as one of its forms. The term “nested query” can also specifically refer to queries nested within FROM clauses, where a subquery is used to create a temporary table that the outer query can then join to or operate on.</p>
 <p>Example of a nested query in a FROM clause:</p>
-<p>SELECT AvgSalaries.Department, Employee.Name, Employee.Salary FROM Employees AS Employee JOIN ( SELECT DepartmentID, AVG(Salary) AS AverageSalary FROM Employees GROUP BY DepartmentID ) AS AvgSalaries ON Employee.DepartmentID = AvgSalaries.DepartmentID WHERE Employee.Salary &gt; AvgSalaries.AverageSalary;</p>
+<p>&amp;nbspSELECT AvgSalaries.Department, Employee.Name, Employee.Salary <br> &amp;nbspFROM Employees AS Employee <br> &amp;nbspJOIN ( <br> &amp;nbsp&amp;nbsp SELECT DepartmentID, AVG(Salary) AS AverageSalary <br> &amp;nbsp&amp;nbsp FROM Employees <br> &amp;nbsp&amp;nbsp GROUP BY DepartmentID <br> &amp;nbsp) AS AvgSalaries ON Employee.DepartmentID = AvgSalaries.DepartmentID <br> &amp;nbspWHERE Employee.Salary &gt; AvgSalaries.AverageSalary; <br></p>
 <p>In this example, the nested query calculates the average salary per department and creates a temporary table (AvgSalaries) with this information. The outer query then selects employees who earn more than the average salary in their respective departments.</p>
 </section>
 <section id="comparison" class="level2">
