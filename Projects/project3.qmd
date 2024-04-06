@@ -39,7 +39,7 @@ This approach is particularly crucial in an era dominated by AI and ML, where th
 
 ## Infographic
 
-![image](C:/Users/Dann_/OneDrive - BYU-Idaho/BYU Idaho/11th Semester W24/Senior Project/ddominguez_portfolio/Images/Data Maturity Map.png){width=80%}
+![](C:/Users/Dann_/OneDrive - BYU-Idaho/BYU Idaho/11th Semester W24/Senior Project/ddominguez_portfolio/Images/Data Maturity Map.png){width=80%}
 
 ## An initiative for any Business and Individuals.
 
@@ -47,36 +47,69 @@ The intention of the following text is to help understand different data roles, 
 
 Our purpose as being involved in the field is to facilitate Data Products from the beginning till the end.
 
+## The Pitch
+
 Thinking about making well-informed decisions for your business using reliable and meaningful information? Data Maturity is here to guide you through the process, from starting out to achieving your goals. If you're considering diving into the world of AI and Machine Learning because you've heard about the incredible advantages they can bring, you're on the right track. While we can't promise every decision will be perfect, AI and ML can significantly improve your chances of success.
 
 It all starts with a question – the "why" or "how" behind a problem you're looking to solve. In the world of data, every question is an opportunity to embark on a new journey of discovery. This is particularly exciting for those who are keen to uncover insights from data.
 
-EXPLORATORY ANALYSIS: Imagine we're stepping into a forest, looking to handpick the perfect trees for crafting furniture. This is similar to the exploratory phase, where we scope out the landscape to find the data we need. Whether we're generating new data or sourcing it from elsewhere, this phase is about gathering the raw materials for our project.
+### EXPLORATORY ANALYSIS: 
+Imagine we're stepping into a forest, looking to handpick the perfect trees for crafting furniture. This is similar to the exploratory phase, where we scope out the landscape to find the data we need. Whether we're generating new data or sourcing it from elsewhere, this phase is about gathering the raw materials for our project.
 
-EXTRACT, TRANSFORM, AND LOAD (ETL)
+### EXTRACT, TRANSFORM, AND LOAD (ETL)
 Think of extracting data like selecting and cutting down the right trees from our forest. We're identifying and collecting the data we believe will be most useful for our end goal. Extracting involves pulling together all this data, whether it's from documents, files, databases, or other sources, to make it accessible and ready for use.
 
 Transforming data is akin to milling those trees into usable lumber, shaping it to fit our project's needs. This crucial step involves cleaning and organizing the data, using tools and programming languages like R, Python, or SQL, to ensure it's in a usable form.
 
 Loading the data then involves putting it to use, much like utilizing our prepared lumber to start building. This can lead to two paths: one where data is immediately used to inform decisions through dashboards or reports, and another where it's stored in a Data Warehouse for future use. Data stored in a warehouse can be organized in a Data Mart, making it easily accessible for specific needs.
 
-DESCRIPTIVE ANALYSIS: Now that our data (or wood, in our analogy) is prepared and ready, we need to decide what to build with it. In data terms, this means analyzing the information to uncover trends, insights, and potential risks. This stage can already inform some decisions, but there's more depth to explore for greater confidence.
+### DESCRIPTIVE ANALYSIS: 
+Now that our data (or wood, in our analogy) is prepared and ready, we need to decide what to build with it. In data terms, this means analyzing the information to uncover trends, insights, and potential risks. This stage can already inform some decisions, but there's more depth to explore for greater confidence.
 
-MACHINE LEARNING: With our data cleaned and relevant, it's time to dig deeper and find out what's truly significant. This is where Machine Learning comes in, helping to assess the importance of our findings, much like making sure we're studying the right material for an exam.
+### MACHINE LEARNING: 
+With our data cleaned and relevant, it's time to dig deeper and find out what's truly significant. This is where Machine Learning comes in, helping to assess the importance of our findings, much like making sure we're studying the right material for an exam.
 
-PREDICTING: Wouldn't it be great to know your decisions will turn out well? While we can't guarantee 100% success, Machine Learning can get us close by predicting outcomes. This allows us to prepare for various scenarios, increasing the likelihood of success.
+### PREDICTING: 
+Wouldn't it be great to know your decisions will turn out well? While we can't guarantee 100% success, Machine Learning can get us close by predicting outcomes. This allows us to prepare for various scenarios, increasing the likelihood of success.
 
-SIGNIFICANCE: The real test is in the significance of our predictions. This might involve some trial and error, but it's all about understanding if our predictions hold up in the real world. If they do, our confidence in making decisions grows.
+### SIGNIFICANCE: 
+The real test is in the significance of our predictions. This might involve some trial and error, but it's all about understanding if our predictions hold up in the real world. If they do, our confidence in making decisions grows.
 
-ARTIFICIAL INTELLIGENCE: Once we have significant results, we can start training AI. AI is all about teaching computers to perform tasks like analyzing data or making recommendations. It's a big step but can bring incredible benefits to your business.
+### ARTIFICIAL INTELLIGENCE: 
+Once we have significant results, we can start training AI. AI is all about teaching computers to perform tasks like analyzing data or making recommendations. It's a big step but can bring incredible benefits to your business.
 
 In the end, Data Maturity is about equipping you with the knowledge and tools to make impactful decisions. Whether it's figuring out the best step forward, where to invest, or how to optimize your processes, AI and Machine Learning are here to help. As a Data Scientist, my goal is to make these powerful tools accessible to you and your business.
 
 
 
 
-Caps
-Pipeline (APIS)
-Ingest Push back
-Data Enrichment VS Feature Enginering
-Propentionalization
+## Presentation and Creative Works Conference
+
+I presented this iniciative and teaching material at the Research and Creative Works where I was able to present it to judges and people that were interested.
+
+The most commmon question I got from people is What is Data Science and what do you do?
+It was very nice to have the opportunity to tell some of the people what do I and what solutions can Data Science bring to their business and how can it be implemented in different industries and fields.
+
+From the judges I got 17 points out of 18 with the following feedback:
+
+The scoring is broken down as the following: 3 (Outstanding) 2 (Meets Expectations) 1 (Sufficient, needs some improvement)
+
+Mastery of concepts, skills, field: 3,3
+
+Independence of thought and work: 3,3
+
+Professional presence of presenter: 3,3 
+
+Effectiveness of poster/visuals: 2,3
+
+Understood questions and responded effectively: 3,3
+
+Progress toward objective: 3,3
+
+Overall impression/COMMENTS: 
+
+* Great job! Graphic was very informative. Would be nice to organize/simplify all the text and maybe add pictures to make it easier to read. Very well presented by Daniel!
+
+* I love your poster. It will be very helpful for students trying to understand their options. The handout was a great idea; I’m going to recommend that everyone do a handout! Well done!
+
+![](C:/Users/Dann_/OneDrive - BYU-Idaho/BYU Idaho/11th Semester W24/Senior Project/ddominguez_portfolio/Images/Data Maturity Map.png){width=60%}

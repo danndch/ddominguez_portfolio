@@ -72,7 +72,7 @@ Lets take a look at two positions open at TESLA for an internship, they are in t
 
 
 If we were to look into a Ven Diagram we could picture Data Science on one of the sides and Data Engineering in the other, this is it could be taken from out the descriptions and put it into the Data Science or Data Engineering side
-
+s
 ### Skills and Tasks Specific to a Data Scientist:
 
 * Statistical Learning and Bayesian Models: The mention of statistical learning and Bayesian models is more aligned with the data scientist role, where a deep understanding of statistical methods and the ability to apply these methods to extract insights from data is crucial.
