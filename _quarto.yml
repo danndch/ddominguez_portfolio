@@ -46,21 +46,16 @@ website:
         - text: "Senior Project"
           file: projects.qmd
         - text: "---"
-        - text: "Hybrid Data Scientist"
+        - text: "Data Engineering for DS"
           file: Projects/project1.qmd
         - text: "---"
-        - text: "Project 2"
+        - text: "SQL Project"
           file: Projects/project2.qmd
         - text: "---"
-        - text: "Project 3"
+        - text: "Data Maturity"
           file: Projects/project3.qmd
         - text: "---"
-        - text: "Project 4"
-          file: Projects/project4.qmd
-        - text: "---"
-        - text: "Project 5"
-          file: Projects/project5.qmd
-        - text: "---"
+
         #continue the pattern if you need more links
         #copy paste from title and keep it indented to sidebar to add additonal sidebar navigation for other pages
 

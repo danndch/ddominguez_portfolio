@@ -75,22 +75,22 @@ If we were to look into a Ven Diagram we could picture Data Science on one of th
 
 ### Skills and Tasks Specific to a Data Scientist:
 
-Statistical Learning and Bayesian Models: The mention of statistical learning and Bayesian models is more aligned with the data scientist role, where a deep understanding of statistical methods and the ability to apply these methods to extract insights from data is crucial.
-Answering Complex Questions on Fleet Usage and Behavior: This involves not just accessing and processing data but also interpreting it in a way that provides actionable insights, which is a core part of a data scientist's role.
-MLOps Skills: While MLOps can be relevant to both roles, in the context of deploying and managing machine learning models, it leans more towards the data scientist side, especially when it involves model development, validation, and iteration based on statistical principles.
+* Statistical Learning and Bayesian Models: The mention of statistical learning and Bayesian models is more aligned with the data scientist role, where a deep understanding of statistical methods and the ability to apply these methods to extract insights from data is crucial.
+* Answering Complex Questions on Fleet Usage and Behavior: This involves not just accessing and processing data but also interpreting it in a way that provides actionable insights, which is a core part of a data scientist's role.
+* MLOps Skills: While MLOps can be relevant to both roles, in the context of deploying and managing machine learning models, it leans more towards the data scientist side, especially when it involves model development, validation, and iteration based on statistical principles.
 
 
 ### Skills and Tasks Specific to a Data Engineer:
 
-Building Scalable Data Pipelines: The emphasis on building scalable data pipelines for deploying fleet health monitoring models is a essential data engineering task, focusing on the infrastructure that allows for efficient data flow and processing.
-Data ELT Pipelines Using Airflow: Creating and maintaining data Extract, Load, Transform (ELT) pipelines, especially with tools like Airflow, is a key data engineering responsibility, ensuring that data is regularly and reliably prepared for analysis.
-Query Optimization and Advanced SQL: While SQL is used by both data scientists and data engineers, the focus on optimizing and undertaking advanced SQL queries, especially on massive datasets, is more characteristic of data engineering, which often deals with the optimization of data access and processing.
+* Building Scalable Data Pipelines: The emphasis on building scalable data pipelines for deploying fleet health monitoring models is a essential data engineering task, focusing on the infrastructure that allows for efficient data flow and processing.
+* Data ELT Pipelines Using Airflow: Creating and maintaining data Extract, Load, Transform (ELT) pipelines, especially with tools like Airflow, is a key data engineering responsibility, ensuring that data is regularly and reliably prepared for analysis.
+* Query Optimization and Advanced SQL: While SQL is used by both data scientists and data engineers, the focus on optimizing and undertaking advanced SQL queries, especially on massive datasets, is more characteristic of data engineering, which often deals with the optimization of data access and processing.
 
 ### Skills and Tasks Shared Between Both Roles:
 
-Data Analytics and Infrastructure: Both roles involve a level of responsibility for employing data to drive insights and actions, which includes the infrastructure that supports data analytics.
-Use of Tableau and Similar Tools for Dashboards: The creation and maintenance of analytics dashboards are common to both roles, although the focus might differ; data scientists would be more involved in the interpretation of the data, while data engineers would ensure the data is accurately and efficiently presented.
-Working with Cross-Functional Teams: Collaboration with cross-functional teams to support design cycles, provide insights, and support decision-making is essential for both roles, though the nature of the support and insights provided may vary.
+* Data Analytics and Infrastructure: Both roles involve a level of responsibility for employing data to drive insights and actions, which includes the infrastructure that supports data analytics.
+* Use of Tableau and Similar Tools for Dashboards: The creation and maintenance of analytics dashboards are common to both roles, although the focus might differ; data scientists would be more involved in the interpretation of the data, while data engineers would ensure the data is accurately and efficiently presented.
+* Working with Cross-Functional Teams: Collaboration with cross-functional teams to support design cycles, provide insights, and support decision-making is essential for both roles, though the nature of the support and insights provided may vary.
 
 ### The difference
 

@@ -89,61 +89,6 @@
     ]
   },
   {
-    "objectID": "Projects/project2.html",
-    "href": "Projects/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "Senior Project",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#elevator-pitch",
-    "href": "Projects/project2.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "Senior Project",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#questiontask-1",
-    "href": "Projects/project2.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q1 chart .cell execution_count=4}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=5}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "Senior Project",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#questiontask-2",
-    "href": "Projects/project2.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q2 chart .cell execution_count=7}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q2 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=8}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "Senior Project",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#questiontask-3",
-    "href": "Projects/project2.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q3 chart .cell execution_count=10}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q3 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=11}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "Senior Project",
-      "Project 2"
-    ]
-  },
-  {
     "objectID": "ml.html",
     "href": "ml.html",
     "title": "about me",
@@ -232,18 +177,7 @@
     "href": "Projects/project1.html",
     "title": "Senior Project Post 1",
     "section": "",
-    "text": "In the rapidly evolving world of Data, where the ability to turn vast amounts of raw data into actionable insights is highly prized. You may know Python, you may know R, but mastering the language of data and understanding the architecture that supports it are not just an advantage but it is essential. SQL and data engineering, is a realm that it is close to Data Science and there are some skills that will set you apart in your future career.",
-    "crumbs": [
-      "Senior Project",
-      "Hybrid Data Scientist"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#data-science-delveig-into-data-engineering",
-    "href": "Projects/project1.html#data-science-delveig-into-data-engineering",
-    "title": "Senior Project Post 1",
-    "section": "",
-    "text": "In the rapidly evolving world of Data, where the ability to turn vast amounts of raw data into actionable insights is highly prized. You may know Python, you may know R, but mastering the language of data and understanding the architecture that supports it are not just an advantage but it is essential. SQL and data engineering, is a realm that it is close to Data Science and there are some skills that will set you apart in your future career.",
+    "text": "In the rapidly evolving world of Data, where the ability to turn vast amounts of raw data into actionable insights is highly prized. You may know Python, you may know R, but mastering the language of data and understanding the architecture that supports it are not just an advantage but it is essential. SQL and data engineering, is a realm that it is close to Data Science and there are some skills that will set you apart in your future career.\n\n\nSQL, or Structured Query Language, is the cornerstone of data manipulation and retrieval. It’s the bridge between the questions you seek to answer and the data that contains those answers. Whether it’s understanding customer behavior, predicting market trends, or improving operational efficiency, SQL empowers you to:\n\nAccess Critical Data Quickly: Navigate through complex databases with ease, ensuring that no source of insight is beyond your reach.\nCommunicate Effectively with Data: Speak the universal language understood by databases worldwide, making your analyses more versatile and impactful.\nRefine Your Analytical Precision: Hone your ability to ask nuanced questions of your data, enabling more precise, targeted analyses.\n\n\n\n\nAs Data Scientists, our vision is only as clear as the data at our disposal. Data engineering skills could ensure that the data we rely on is accurate, accessible, and ready for analysis. By understanding data pipelines, storage solutions, and data processing, we will:\n\nEnhance Data Quality and Accessibility: Ensure that the data you use for your analyses is clean, well-structured, and readily available, reducing the time from question to insight.\nScale Your Data Efforts: Tackle larger datasets and more complex problems with confidence, knowing that your data infrastructure is robust and scalable.\nBridge the Gap Between Data and Decision-Making: Play that role in translating data insights into strategic actions, making your contributions invaluable to any team.\nYou don’t want to sit and wait: If you provide to your employer a solution more than waiting for the Data Engineer to give you the data you need to work, what if you could provide that solution as well, not having to depend a 100% on someone else gives you freedome and a higher value in the market.\n\n\n\n\nEmbracing SQL and and some other data engineering concepts is not just about enlarging your technical toolbox; it’s about expanding your problem-solving skillset. In a data-driven world, these skills enable you to navigate and make sense of the multiple situations, turning data into information which will become decisions that drive progress.",
     "crumbs": [
       "Senior Project",
       "Hybrid Data Scientist"
@@ -253,8 +187,8 @@
     "objectID": "Projects/project1.html#why-sql",
     "href": "Projects/project1.html#why-sql",
     "title": "Senior Project Post 1",
-    "section": "Why SQL?",
-    "text": "Why SQL?\nSQL, or Structured Query Language, is the cornerstone of data manipulation and retrieval. It’s the bridge between the questions you seek to answer and the data that contains those answers. Whether it’s understanding customer behavior, predicting market trends, or improving operational efficiency, SQL empowers you to:\n\nAccess Critical Data Quickly: Navigate through complex databases with ease, ensuring that no source of insight is beyond your reach.\nCommunicate Effectively with Data: Speak the universal language understood by databases worldwide, making your analyses more versatile and impactful.\nRefine Your Analytical Precision: Hone your ability to ask nuanced questions of your data, enabling more precise, targeted analyses.",
+    "section": "",
+    "text": "SQL, or Structured Query Language, is the cornerstone of data manipulation and retrieval. It’s the bridge between the questions you seek to answer and the data that contains those answers. Whether it’s understanding customer behavior, predicting market trends, or improving operational efficiency, SQL empowers you to:\n\nAccess Critical Data Quickly: Navigate through complex databases with ease, ensuring that no source of insight is beyond your reach.\nCommunicate Effectively with Data: Speak the universal language understood by databases worldwide, making your analyses more versatile and impactful.\nRefine Your Analytical Precision: Hone your ability to ask nuanced questions of your data, enabling more precise, targeted analyses.",
     "crumbs": [
       "Senior Project",
       "Hybrid Data Scientist"
@@ -264,8 +198,8 @@
     "objectID": "Projects/project1.html#the-value-of-data-engineering-skills",
     "href": "Projects/project1.html#the-value-of-data-engineering-skills",
     "title": "Senior Project Post 1",
-    "section": "The Value of Data Engineering Skills",
-    "text": "The Value of Data Engineering Skills\nAs Data Scientists, our vision is only as clear as the data at our disposal. Data engineering skills could ensure that the data we rely on is accurate, accessible, and ready for analysis. By understanding data pipelines, storage solutions, and data processing, we will:\n\nEnhance Data Quality and Accessibility: Ensure that the data you use for your analyses is clean, well-structured, and readily available, reducing the time from question to insight.\nScale Your Data Efforts: Tackle larger datasets and more complex problems with confidence, knowing that your data infrastructure is robust and scalable.\nBridge the Gap Between Data and Decision-Making: Play that role in translating data insights into strategic actions, making your contributions invaluable to any team.\nYou don’t want to sit and wait: If you provide to your employer a solution more than waiting for the Data Engineer to give you the data you need to work, what if you could provide that solution as well, not having to depend a 100% on someone else gives you freedome and a higher value in the market.",
+    "section": "",
+    "text": "As Data Scientists, our vision is only as clear as the data at our disposal. Data engineering skills could ensure that the data we rely on is accurate, accessible, and ready for analysis. By understanding data pipelines, storage solutions, and data processing, we will:\n\nEnhance Data Quality and Accessibility: Ensure that the data you use for your analyses is clean, well-structured, and readily available, reducing the time from question to insight.\nScale Your Data Efforts: Tackle larger datasets and more complex problems with confidence, knowing that your data infrastructure is robust and scalable.\nBridge the Gap Between Data and Decision-Making: Play that role in translating data insights into strategic actions, making your contributions invaluable to any team.\nYou don’t want to sit and wait: If you provide to your employer a solution more than waiting for the Data Engineer to give you the data you need to work, what if you could provide that solution as well, not having to depend a 100% on someone else gives you freedome and a higher value in the market.",
     "crumbs": [
       "Senior Project",
       "Hybrid Data Scientist"
@@ -275,19 +209,107 @@
     "objectID": "Projects/project1.html#your-path-to-becoming-a-data-science-hybrid-with-data-engineering",
     "href": "Projects/project1.html#your-path-to-becoming-a-data-science-hybrid-with-data-engineering",
     "title": "Senior Project Post 1",
-    "section": "Your Path to Becoming a Data Science Hybrid with Data Engineering",
-    "text": "Your Path to Becoming a Data Science Hybrid with Data Engineering\nEmbracing SQL and and some other data engineering concepts is not just about enlarging your technical toolbox; it’s about expanding your problem-solving skillset. In a data-driven world, these skills enable you to navigate and make sense of the multiple situations, turning data into information which will become decisions that drive progress.",
+    "section": "",
+    "text": "Embracing SQL and and some other data engineering concepts is not just about enlarging your technical toolbox; it’s about expanding your problem-solving skillset. In a data-driven world, these skills enable you to navigate and make sense of the multiple situations, turning data into information which will become decisions that drive progress.",
     "crumbs": [
       "Senior Project",
       "Hybrid Data Scientist"
     ]
   },
   {
-    "objectID": "Projects/project1.html#now-where-is-this-being-used",
-    "href": "Projects/project1.html#now-where-is-this-being-used",
+    "objectID": "Projects/project1.html#top-industry",
+    "href": "Projects/project1.html#top-industry",
     "title": "Senior Project Post 1",
-    "section": "Now where is this being used?",
-    "text": "Now where is this being used?\n\nTop industry\nLets take a look at two positions open at TESLA for an internship, they are in the same job post but they ask for two different positions.\n \nIf we were to look into a Ven Diagram we could picture Data Science on one of the sides and Data Engineering in the other, this is it could be taken from out the descriptions and put it into the Data Science or Data Engineering side\n\nSkills and Tasks Specific to a Data Scientist:\nStatistical Learning and Bayesian Models: The mention of statistical learning and Bayesian models is more aligned with the data scientist role, where a deep understanding of statistical methods and the ability to apply these methods to extract insights from data is crucial. Answering Complex Questions on Fleet Usage and Behavior: This involves not just accessing and processing data but also interpreting it in a way that provides actionable insights, which is a core part of a data scientist’s role. MLOps Skills: While MLOps can be relevant to both roles, in the context of deploying and managing machine learning models, it leans more towards the data scientist side, especially when it involves model development, validation, and iteration based on statistical principles.\n\n\nSkills and Tasks Specific to a Data Engineer:\nBuilding Scalable Data Pipelines: The emphasis on building scalable data pipelines for deploying fleet health monitoring models is a essential data engineering task, focusing on the infrastructure that allows for efficient data flow and processing. Data ELT Pipelines Using Airflow: Creating and maintaining data Extract, Load, Transform (ELT) pipelines, especially with tools like Airflow, is a key data engineering responsibility, ensuring that data is regularly and reliably prepared for analysis. Query Optimization and Advanced SQL: While SQL is used by both data scientists and data engineers, the focus on optimizing and undertaking advanced SQL queries, especially on massive datasets, is more characteristic of data engineering, which often deals with the optimization of data access and processing.\n\n\nSkills and Tasks Shared Between Both Roles:\nData Analytics and Infrastructure: Both roles involve a level of responsibility for employing data to drive insights and actions, which includes the infrastructure that supports data analytics. Use of Tableau and Similar Tools for Dashboards: The creation and maintenance of analytics dashboards are common to both roles, although the focus might differ; data scientists would be more involved in the interpretation of the data, while data engineers would ensure the data is accurately and efficiently presented. Working with Cross-Functional Teams: Collaboration with cross-functional teams to support design cycles, provide insights, and support decision-making is essential for both roles, though the nature of the support and insights provided may vary.\n\n\nThe difference\nThe job description establishes a range for the payment, it goes from $20-60 an hour. Just imagine that for being able to understand skills like ETL, stablishing a pipeline (Which is ETL), and sharp your SQL could give you 3 times more money, and you could fix your problems in less time than waiting for someone to complement this tasks, if you are hired of course.",
+    "section": "Top industry",
+    "text": "Top industry\nLets take a look at two positions open at TESLA for an internship, they are in the same job post but they ask for two different positions.\n \nIf we were to look into a Ven Diagram we could picture Data Science on one of the sides and Data Engineering in the other, this is it could be taken from out the descriptions and put it into the Data Science or Data Engineering side\n\nSkills and Tasks Specific to a Data Scientist:\nStatistical Learning and Bayesian Models: The mention of statistical learning and Bayesian models is more aligned with the data scientist role, where a deep understanding of statistical methods and the ability to apply these methods to extract insights from data is crucial. Answering Complex Questions on Fleet Usage and Behavior: This involves not just accessing and processing data but also interpreting it in a way that provides actionable insights, which is a core part of a data scientist’s role. MLOps Skills: While MLOps can be relevant to both roles, in the context of deploying and managing machine learning models, it leans more towards the data scientist side, especially when it involves model development, validation, and iteration based on statistical principles.\n\n\nSkills and Tasks Specific to a Data Engineer:\nBuilding Scalable Data Pipelines: The emphasis on building scalable data pipelines for deploying fleet health monitoring models is a essential data engineering task, focusing on the infrastructure that allows for efficient data flow and processing. Data ELT Pipelines Using Airflow: Creating and maintaining data Extract, Load, Transform (ELT) pipelines, especially with tools like Airflow, is a key data engineering responsibility, ensuring that data is regularly and reliably prepared for analysis. Query Optimization and Advanced SQL: While SQL is used by both data scientists and data engineers, the focus on optimizing and undertaking advanced SQL queries, especially on massive datasets, is more characteristic of data engineering, which often deals with the optimization of data access and processing.\n\n\nSkills and Tasks Shared Between Both Roles:\nData Analytics and Infrastructure: Both roles involve a level of responsibility for employing data to drive insights and actions, which includes the infrastructure that supports data analytics. Use of Tableau and Similar Tools for Dashboards: The creation and maintenance of analytics dashboards are common to both roles, although the focus might differ; data scientists would be more involved in the interpretation of the data, while data engineers would ensure the data is accurately and efficiently presented. Working with Cross-Functional Teams: Collaboration with cross-functional teams to support design cycles, provide insights, and support decision-making is essential for both roles, though the nature of the support and insights provided may vary.\n\n\nThe difference\nThe job description establishes a range for the payment, it goes from $20-60 an hour. Just imagine that for being able to understand skills like ETL, stablishing a pipeline (Which is ETL), and sharp your SQL could give you 3 times more money, and you could fix your problems in less time than waiting for someone to complement this tasks, if you are hired of course.",
+    "crumbs": [
+      "Senior Project",
+      "Hybrid Data Scientist"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#difference-on-the-data-structures",
+    "href": "Projects/project1.html#difference-on-the-data-structures",
+    "title": "Senior Project Post 1",
+    "section": "Difference on the Data Structures",
+    "text": "Difference on the Data Structures\n\nData Lake\n\nAttributes:\nA Data Lake is a vast pool of raw, unstructured, and structured data stored in its native format. It is designed to store a large amount of data without a predefined schema, allowing you to keep all your data in one place without having to structure it first.\n\n\nBenefits:\n\nFlexibility: You can store data of all types and structures, making it highly adaptable to changes.\nScalability: Capable of handling massive volumes of data, from gigabytes to petabytes.\nCost-Effectiveness: Often built on inexpensive storage solutions, making it economical for storing vast amounts of data.\n\n\n\nUses:\n\nIdeal for big data and real-time analytics projects.\nUseful for organizations that want to store all their data without initially knowing how they will use it.\n\n\n\n\nData Warehouse\n\nAttributes:\nA Data Warehouse is a centralized repository for structured, filtered data that has already been processed for a specific purpose. It is highly structured and uses a schema-on-write approach, meaning the data is organized and formatted at the time of entry.\n\n\nBenefits:\n\nImproved Data Quality and Consistency: Due to its structured nature, data is cleaned and transformed, ensuring reliability.\nPerformance: Optimized for complex queries and data analysis, providing fast access to insights.\nHistorical Intelligence: Ideal for storing historical data, enabling trend analysis over time.\n\n\n\nUses:\n\nSuitable for business intelligence, reporting, and data analysis purposes.\nUsed by organizations that need to analyze their data comprehensively to make informed decisions.\n\n\n\n\nData Mart\n\nAttributes:\nA Data Mart is a subset of a data warehouse designed to focus on a specific line of business, department, or subject area. It is more tailored and subject-oriented, containing only the data relevant to a particular group or purpose.\n\n\nBenefits:\n\nIncreased Accessibility: More accessible to users due to its focus on a specific domain, making it easier to retrieve relevant information.\nFaster Query Performance: Smaller size leads to quicker data retrieval, improving efficiency.\nUser-Friendly: Easier for non-technical users to interact with and understand since it’s focused on a specific area.\n\n\n\nUses:\n\nIdeal for department-specific reports and analyses, such as sales, finance, or marketing data.\nUsed by departments within organizations that need quick, easy access to specific, relevant data.\n\n\n\n\nData Fabric\n\nAttributes:\n\nData Fabric provides a unified layer of data and connectivity across different platforms and environments, using various technologies and approaches (like metadata).\nIt is designed to provide consistent capabilities across endpoints in a hybrid and multi-cloud environment.\n\n\n\nBenefits:\n\nAgility: Enables quick access to data across the organization, regardless of its location.\nInteroperability: Facilitates seamless data sharing and integration across diverse systems and platforms.\n\n\n\nUses:\n\nIdeal for organizations with complex data ecosystems looking to streamline data access, integration, and management across multiple environments.",
+    "crumbs": [
+      "Senior Project",
+      "Hybrid Data Scientist"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#etl-extract-transform-load",
+    "href": "Projects/project1.html#etl-extract-transform-load",
+    "title": "Senior Project Post 1",
+    "section": "ETL (Extract, Transform, Load)",
+    "text": "ETL (Extract, Transform, Load)\n\nExtract: Data is sourced from various origins, such as databases, CRM systems, flat files, or APIs. This stage involves querying data sources, often using SQL for structured databases, and aggregating the data for further processing.\nTransform: This critical phase involves a series of operations such as cleansing (removing or correcting data errors), deduplication (eliminating duplicate records), normalization (structuring data to reduce redundancy), and aggregation (summarizing detailed data). Complex transformations might include pivoting data formats, merging datasets, or applying business logic to derive new calculated fields. This step is usually performed in a dedicated staging area or a transformation engine, using tools and languages suitable for data manipulation, including SQL, Python, or specialized ETL tools.\nLoad: The final step involves writing the transformed data into a target data warehouse or database. This phase is carefully managed to maintain data integrity and optimize for query performance, often involving SQL operations to insert data into structured schemas designed for analysis.",
+    "crumbs": [
+      "Senior Project",
+      "Hybrid Data Scientist"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#advantages-and-challenges",
+    "href": "Projects/project1.html#advantages-and-challenges",
+    "title": "Senior Project Post 1",
+    "section": "Advantages and Challenges:",
+    "text": "Advantages and Challenges:\n\nControl and Quality: The ETL process allows for extensive control over the transformation logic, ensuring data quality and consistency. This is particularly important in regulated industries or where data accuracy is critical.\nPerformance Consideration: ETL can relieve the target data warehouse from the processing load of transformations. However, the transformation phase can become a bottleneck if not well-optimized, especially with large volumes of data.\nTooling and Complexity: While ETL offers robustness and control, it can also introduce complexity, requiring specialized tools and expertise to manage the transformation logic and workflows.",
+    "crumbs": [
+      "Senior Project",
+      "Hybrid Data Scientist"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#when-to-use-etl",
+    "href": "Projects/project1.html#when-to-use-etl",
+    "title": "Senior Project Post 1",
+    "section": "When to Use ETL:",
+    "text": "When to Use ETL:\n\nWhen data quality and transformation logic are complex and need to be managed meticulously.\nIn environments where the computational capabilities of the target data warehouse are limited or costly.\nWhen data processing needs to be done before loading to ensure compliance, security, or data privacy.",
+    "crumbs": [
+      "Senior Project",
+      "Hybrid Data Scientist"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#advantages-and-challenges-1",
+    "href": "Projects/project1.html#advantages-and-challenges-1",
+    "title": "Senior Project Post 1",
+    "section": "Advantages and Challenges:",
+    "text": "Advantages and Challenges:\n\nScalability and Flexibility: ELT leverages the scalable compute resources of modern cloud-based data warehouses, handling vast amounts of data efficiently. The flexibility to transform data on-the-fly supports agile analytics and data exploration.\nSpeed: By loading data directly into the warehouse, ELT can make data available for analysis more quickly. This is advantageous in fast-paced environments where timely insights are critical.\nSimplification and Cost: ELT can simplify the data pipeline by reducing the need for a separate transformation layer, potentially lowering infrastructure and maintenance costs. However, this approach requires a robust data warehouse capable of handling intensive compute tasks.",
+    "crumbs": [
+      "Senior Project",
+      "Hybrid Data Scientist"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#when-to-use-elt",
+    "href": "Projects/project1.html#when-to-use-elt",
+    "title": "Senior Project Post 1",
+    "section": "When to Use ELT:",
+    "text": "When to Use ELT:\n\nIn big data scenarios where the volume, velocity, and variety of data exceed traditional database capabilities.\nWhen using cloud-based data warehouses with high processing power, where the cost of compute resources is outweighed by the need for flexibility and speed.\nIn agile environments where the requirements for data models and analyses change frequently, necessitating a flexible approach to data transformation.",
+    "crumbs": [
+      "Senior Project",
+      "Hybrid Data Scientist"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#the-ongoing-debate",
+    "href": "Projects/project1.html#the-ongoing-debate",
+    "title": "Senior Project Post 1",
+    "section": "The Ongoing Debate",
+    "text": "The Ongoing Debate\nThe debate between ETL and ELT often centers on trade-offs between control and flexibility, scalability and complexity, and the upfront costs versus long-term benefits. The right choice depends on specific project requirements, data characteristics, available infrastructure, and strategic priorities.\nETL is traditionally preferred for scenarios where data integrity, privacy, and compliance are paramount, and where transformations need to be tightly controlled and monitored. It’s ideal for environments where the cleanliness and structure of the data are critical before it can be stored or analyzed, such as in financial services or healthcare sectors where data accuracy and privacy are non-negotiable.\nELT, on the other hand, is favored in contexts where the agility and flexibility of data analysis are prioritized. The ability to store raw data and transform it as needed allows for a more explorative and iterative approach to data analytics. This is particularly beneficial in dynamic industries like e-commerce or social media, where business needs can change rapidly, and the ability to pivot and explore new data models quickly is a competitive advantage.",
+    "crumbs": [
+      "Senior Project",
+      "Hybrid Data Scientist"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#practical-examples",
+    "href": "Projects/project1.html#practical-examples",
+    "title": "Senior Project Post 1",
+    "section": "Practical Examples",
+    "text": "Practical Examples\nETL Example: A financial institution might use ETL to integrate customer transaction data from various sources. The transformation stage would include validating transaction codes, converting currencies, and anonymizing personal information to comply with data protection regulations before loading the clean, transformed data into a data warehouse for analysis and reporting.\nELT Example: A digital marketing firm might use ELT to analyze web traffic data. Raw clickstream data is ingested directly into a cloud-based data warehouse, and SQL queries are used to transform this data on-demand, creating different views for analyzing user behavior, campaign performance, and website engagement.",
     "crumbs": [
       "Senior Project",
       "Hybrid Data Scientist"
@@ -296,12 +318,12 @@
   {
     "objectID": "Projects/project3.html",
     "href": "Projects/project3.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Final Post",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
+    "text": "The rapid growth of Artificial Intelligence (AI) and Machine Learning (ML) in this digital era is pushing many industries to start using these technologies to stay competitive and leverage the significant benefits they offer for making informed decisions. But how do we keep up when there’s confusion about the roles and responsibilities within data-related jobs? Through my experience of applying to over 100 jobs, including positions at Fortune 200 companies, and interacting with employers and recruiters at career fairs, I’ve observed widespread misconceptions about the data industry and its roles, and what data can actually achieve for businesses. This situation reminds me of learning the differences between “Their,” “There,” and “They’re.” A common issue is the interchangeability of titles such as Data Analyst, Data Scientist, and Data Engineer, along with the misconception that Data Scientists work only in IT. These misunderstandings made me wonder: if even mid-to-large-sized companies confuse these terms, how can smaller companies and startups take advantage and structure their data processes for success?\nOne notable conversation with an employer at a small company highlighted a common challenge: they had an Analyst position that, in practice, was not focused on analyzing data in the way one might expect. When asked if they had a dedicated full-time data analyst to create reports, reveal trends, and provide insights for decision-makers, the answer was no. Yet, the idea of having someone to perform in-depth analysis and help understand trends was seen as highly beneficial. This interaction underscores the widespread need for clearer roles and a more structured approach to data analysis within organizations, regardless of size.\nThe concept of Data Maturity is designed to address this gap by providing a comprehensive understanding of the necessary actions and tools organizations need to effectively employ data and generate insights. It guides companies in identifying their specific needs, where they need to invest more effort, and how to establish a reliable process for data analysis. The aim is to lay a solid foundation in the data processes of individuals and organizations, ensuring they have the right information when they need it. By structuring new information with a clear end goal—answering questions and making informed decisions—Data Maturity empowers businesses to leverage their data more effectively and achieve greater success.\nThis approach is particularly crucial in an era dominated by AI and ML, where the ability to navigate the complex data landscape can set companies apart. Data Maturity acts as a map, offering key landmarks and guidelines rather than a rigid, step-by-step recipe. This framework aims to transform the data process, making it more efficient and aligned with organizational goals, thereby facilitating a deeper understanding and better use of data for strategic decision-making.\n\n\n\n\n\n\nimage\n\n\n\n\n\nThinking about making well-informed decisions for your business using reliable and meaningful information? Data Maturity is here to guide you through the process, from starting out to achieving your goals. If you’re considering diving into the world of AI and Machine Learning because you’ve heard about the incredible advantages they can bring, you’re on the right track. While we can’t promise every decision will be perfect, AI and ML can significantly improve your chances of success.\nIt all starts with a question – the “why” or “how” behind a problem you’re looking to solve. In the world of data, every question is an opportunity to embark on a new journey of discovery. This is particularly exciting for those who are keen to uncover insights from data.\nEXPLORATORY ANALYSIS: Imagine we’re stepping into a forest, looking to handpick the perfect trees for crafting furniture. This is similar to the exploratory phase, where we scope out the landscape to find the data we need. Whether we’re generating new data or sourcing it from elsewhere, this phase is about gathering the raw materials for our project.\nEXTRACT, TRANSFORM, AND LOAD (ETL) Think of extracting data like selecting and cutting down the right trees from our forest. We’re identifying and collecting the data we believe will be most useful for our end goal. Extracting involves pulling together all this data, whether it’s from documents, files, databases, or other sources, to make it accessible and ready for use.\nTransforming data is akin to milling those trees into usable lumber, shaping it to fit our project’s needs. This crucial step involves cleaning and organizing the data, using tools and programming languages like R, Python, or SQL, to ensure it’s in a usable form.\nLoading the data then involves putting it to use, much like utilizing our prepared lumber to start building. This can lead to two paths: one where data is immediately used to inform decisions through dashboards or reports, and another where it’s stored in a Data Warehouse for future use. Data stored in a warehouse can be organized in a Data Mart, making it easily accessible for specific needs.\nDESCRIPTIVE ANALYSIS: Now that our data (or wood, in our analogy) is prepared and ready, we need to decide what to build with it. In data terms, this means analyzing the information to uncover trends, insights, and potential risks. This stage can already inform some decisions, but there’s more depth to explore for greater confidence.\nMACHINE LEARNING: With our data cleaned and relevant, it’s time to dig deeper and find out what’s truly significant. This is where Machine Learning comes in, helping to assess the importance of our findings, much like making sure we’re studying the right material for an exam.\nPREDICTING: Wouldn’t it be great to know your decisions will turn out well? While we can’t guarantee 100% success, Machine Learning can get us close by predicting outcomes. This allows us to prepare for various scenarios, increasing the likelihood of success.\nSIGNIFICANCE: The real test is in the significance of our predictions. This might involve some trial and error, but it’s all about understanding if our predictions hold up in the real world. If they do, our confidence in making decisions grows.\nARTIFICIAL INTELLIGENCE: Once we have significant results, we can start training AI. AI is all about teaching computers to perform tasks like analyzing data or making recommendations. It’s a big step but can bring incredible benefits to your business.\nIn the end, Data Maturity is about equipping you with the knowledge and tools to make impactful decisions. Whether it’s figuring out the best step forward, where to invest, or how to optimize your processes, AI and Machine Learning are here to help. As a Data Scientist, my goal is to make these powerful tools accessible to you and your business.\nCaps Pipeline (APIS) Ingest Push back Data Enrichment VS Feature Enginering Propentionalization",
     "crumbs": [
       "Senior Project",
-      "Project 3"
+      "Data Maturity"
     ]
   },
   {
@@ -444,5 +466,38 @@
     "title": "Daniel Dominguez",
     "section": "Volunteer",
     "text": "Volunteer\n\nData Science Society Leadership Apr 2023-Present\nBYU-I Data Science Society Rexburg, ID\n\n\nLed and structured the efforts of 11 projects, maintaining regular contact and meetings with the 22 project managers to facilitate project progress, tools, and deliver the final products by the due date."
+  },
+  {
+    "objectID": "Projects/project3.html#the-abstract",
+    "href": "Projects/project3.html#the-abstract",
+    "title": "Final Post",
+    "section": "",
+    "text": "The rapid growth of Artificial Intelligence (AI) and Machine Learning (ML) in this digital era is pushing many industries to start using these technologies to stay competitive and leverage the significant benefits they offer for making informed decisions. But how do we keep up when there’s confusion about the roles and responsibilities within data-related jobs? Through my experience of applying to over 100 jobs, including positions at Fortune 200 companies, and interacting with employers and recruiters at career fairs, I’ve observed widespread misconceptions about the data industry and its roles, and what data can actually achieve for businesses. This situation reminds me of learning the differences between “Their,” “There,” and “They’re.” A common issue is the interchangeability of titles such as Data Analyst, Data Scientist, and Data Engineer, along with the misconception that Data Scientists work only in IT. These misunderstandings made me wonder: if even mid-to-large-sized companies confuse these terms, how can smaller companies and startups take advantage and structure their data processes for success?\nOne notable conversation with an employer at a small company highlighted a common challenge: they had an Analyst position that, in practice, was not focused on analyzing data in the way one might expect. When asked if they had a dedicated full-time data analyst to create reports, reveal trends, and provide insights for decision-makers, the answer was no. Yet, the idea of having someone to perform in-depth analysis and help understand trends was seen as highly beneficial. This interaction underscores the widespread need for clearer roles and a more structured approach to data analysis within organizations, regardless of size.\nThe concept of Data Maturity is designed to address this gap by providing a comprehensive understanding of the necessary actions and tools organizations need to effectively employ data and generate insights. It guides companies in identifying their specific needs, where they need to invest more effort, and how to establish a reliable process for data analysis. The aim is to lay a solid foundation in the data processes of individuals and organizations, ensuring they have the right information when they need it. By structuring new information with a clear end goal—answering questions and making informed decisions—Data Maturity empowers businesses to leverage their data more effectively and achieve greater success.\nThis approach is particularly crucial in an era dominated by AI and ML, where the ability to navigate the complex data landscape can set companies apart. Data Maturity acts as a map, offering key landmarks and guidelines rather than a rigid, step-by-step recipe. This framework aims to transform the data process, making it more efficient and aligned with organizational goals, thereby facilitating a deeper understanding and better use of data for strategic decision-making.",
+    "crumbs": [
+      "Senior Project",
+      "Data Maturity"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#infographic",
+    "href": "Projects/project3.html#infographic",
+    "title": "Final Post",
+    "section": "",
+    "text": "image",
+    "crumbs": [
+      "Senior Project",
+      "Data Maturity"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#an-initiative-for-any-business-and-individuals.",
+    "href": "Projects/project3.html#an-initiative-for-any-business-and-individuals.",
+    "title": "Final Post",
+    "section": "",
+    "text": "Thinking about making well-informed decisions for your business using reliable and meaningful information? Data Maturity is here to guide you through the process, from starting out to achieving your goals. If you’re considering diving into the world of AI and Machine Learning because you’ve heard about the incredible advantages they can bring, you’re on the right track. While we can’t promise every decision will be perfect, AI and ML can significantly improve your chances of success.\nIt all starts with a question – the “why” or “how” behind a problem you’re looking to solve. In the world of data, every question is an opportunity to embark on a new journey of discovery. This is particularly exciting for those who are keen to uncover insights from data.\nEXPLORATORY ANALYSIS: Imagine we’re stepping into a forest, looking to handpick the perfect trees for crafting furniture. This is similar to the exploratory phase, where we scope out the landscape to find the data we need. Whether we’re generating new data or sourcing it from elsewhere, this phase is about gathering the raw materials for our project.\nEXTRACT, TRANSFORM, AND LOAD (ETL) Think of extracting data like selecting and cutting down the right trees from our forest. We’re identifying and collecting the data we believe will be most useful for our end goal. Extracting involves pulling together all this data, whether it’s from documents, files, databases, or other sources, to make it accessible and ready for use.\nTransforming data is akin to milling those trees into usable lumber, shaping it to fit our project’s needs. This crucial step involves cleaning and organizing the data, using tools and programming languages like R, Python, or SQL, to ensure it’s in a usable form.\nLoading the data then involves putting it to use, much like utilizing our prepared lumber to start building. This can lead to two paths: one where data is immediately used to inform decisions through dashboards or reports, and another where it’s stored in a Data Warehouse for future use. Data stored in a warehouse can be organized in a Data Mart, making it easily accessible for specific needs.\nDESCRIPTIVE ANALYSIS: Now that our data (or wood, in our analogy) is prepared and ready, we need to decide what to build with it. In data terms, this means analyzing the information to uncover trends, insights, and potential risks. This stage can already inform some decisions, but there’s more depth to explore for greater confidence.\nMACHINE LEARNING: With our data cleaned and relevant, it’s time to dig deeper and find out what’s truly significant. This is where Machine Learning comes in, helping to assess the importance of our findings, much like making sure we’re studying the right material for an exam.\nPREDICTING: Wouldn’t it be great to know your decisions will turn out well? While we can’t guarantee 100% success, Machine Learning can get us close by predicting outcomes. This allows us to prepare for various scenarios, increasing the likelihood of success.\nSIGNIFICANCE: The real test is in the significance of our predictions. This might involve some trial and error, but it’s all about understanding if our predictions hold up in the real world. If they do, our confidence in making decisions grows.\nARTIFICIAL INTELLIGENCE: Once we have significant results, we can start training AI. AI is all about teaching computers to perform tasks like analyzing data or making recommendations. It’s a big step but can bring incredible benefits to your business.\nIn the end, Data Maturity is about equipping you with the knowledge and tools to make impactful decisions. Whether it’s figuring out the best step forward, where to invest, or how to optimize your processes, AI and Machine Learning are here to help. As a Data Scientist, my goal is to make these powerful tools accessible to you and your business.\nCaps Pipeline (APIS) Ingest Push back Data Enrichment VS Feature Enginering Propentionalization",
+    "crumbs": [
+      "Senior Project",
+      "Data Maturity"
+    ]
   }
 ]

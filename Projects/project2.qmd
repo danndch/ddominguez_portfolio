@@ -37,3 +37,19 @@ execute:
 ## Nested Queries
 
 ## Project
+
+
+Data Maturity
+
+Caps
+Pipeline (APIS)
+Incest Push back
+Data Enrichment VS Feature Enginering
+Propentionalization
+
+
+
+
+
+
+
