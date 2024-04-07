@@ -9,46 +9,39 @@ subtitle: "Repo to showcase my last Project in college"
 
 The objective of this project is to design and construct an educational framework that helps Data Science students develop skills typically used by Data Engineers. This project aims to introduce students to scenarios and a pace of research and learning that keeps a scholarly mindset while incorporating aspects of a professional environment.
 
-## Potential Topics
+## Topics
 
-This outline has been put together from different sources including academic literature, industry job postings, and IT articles. The mix of this different skills it might be relevant and could boost the value for future students in the job market, thereby enhancing the employability of future graduates. The proposed topics are the following:
+- [Data Engineering for Data Science](/Projects/project1.qmd)
 
-- **Data Science vs. Data Engineering**
+This provides a background on different topics that I researched in job boards for the most common Data Engineers Skills that jobs are asking and students can learn to fit into this description after studying all the core courses of the Data Science program at BYU-Idaho. The content of exposed in the page is:
+* Data Science delveig into Data Engineering
+* Why SQL?
+* The Value of Data Engineering Skills
+* Your Path to Becoming a Data Science Hybrid with Data Engineering
+* Now where is this being used?
+* Material
+* ETL VS ELT
+* ELT (Extract, Load, Transform)
+* SQL’s Role in ETL and ELT
 
-- **TEL, ELT, ETL, ETLT?**
+- [Data Products](/Projects/project2.qmd)
 
-- **Data Pipelines and Workflows**
+One of my major takeouts from college along my job, internship, projects on the side, and projects at society, was to discover the whole process of completing a Data Product and I believe you don't get to do something like that and understand the parts that will make a project better until I learned the majority of the following points.
+* Data Products and its’ parts
+* The key characteristics of a data product include:
+* SQL Elements
+* Parts of the query
+* Subqueries
+* Nested Queries
+* APIs
+* Data Pipelines
+* Data Enrichment
+* Feature Engineering
+* Data Enrichment vs Feature Engineering
 
-- **NoSQL Databases?**
+- [Data Maturity](/Projects/project3.qmd)
+After my research and experience I understood that the field of Data tends to confuse some of the roles involved in the industry, which sometimes might be confusing. This took me to write a presentation for starters in the Data-verse to help them use Data Science and many of the technologies related can bring as assets to their projects, industry, and business.
 
-- **Data Transformation Techniques with SQL**
-
-- **Cloud-based Data Services**
-
-- **Performance Optimization**
-
-- **Data Quality, Testing, and Monitoring**
-
-- **Big Data Technologies**
-
-- **Data Ingestion Tools**
-
-- **Containerization and Virtualization**
-
-- **Data Governance and Ethics**
-
-- **Advanced Analytics and Machine Learning Operations (MLOps)**
-
-- **Real-time Data Processing and Analytics**
-
-- **Data Visualization and Reporting**
-
-- **APIs for Data Science**
-
-- **Collaborative Data Science**
-
-
-- [Data Science vs. Data Engineering](/Projects/project1.qmd)
-- [Data Engineering for DS](/Projects/project2.qmd)
-- [SQL Work](/Projects/project3.qmd)
-- [Data Maturity](/Projects/project4.qmd)
+- [Project from the USU Hackathon with SQL and Snowflake](/Projects/project4.qmd)
+This project includes the set-up and connection to snowflakes. The goal of this project is to predict when would a package will be deliverd by an international company shipping materials to different parts of the world.
+This project also explores the use of a new tool name Pycaret.

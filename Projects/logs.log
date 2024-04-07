@@ -1,0 +1,15 @@
+2024-04-06 20:09:41,188:WARNING:<ipython-input-4-1bef2f376bf6>:2: DtypeWarning: Columns (20) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("C:/Users/Dann_/OneDrive/Documentos/hack/sfguide-intro-to-machine-learning-with-snowpark-ml-for-python/koch.csv")
+
+2024-04-06 20:09:57,197:WARNING:<ipython-input-5-c8aac0e45f61>:2: DtypeWarning: Columns (20) have mixed types. Specify dtype option on import or set low_memory=False.
+  koch = pd.read_csv("C:/Users/Dann_/OneDrive/Documentos/hack/sfguide-intro-to-machine-learning-with-snowpark-ml-for-python/koch.csv")
+
+2024-04-06 20:10:09,269:WARNING:<ipython-input-6-8d35a82201c8>:2: DtypeWarning: Columns (20) have mixed types. Specify dtype option on import or set low_memory=False.
+  koch = pd.read_csv("C:/Users/Dann_/OneDrive/Documentos/hack/sfguide-intro-to-machine-learning-with-snowpark-ml-for-python/koch.csv")
+
+2024-04-06 20:25:37,205:WARNING:<ipython-input-7-8d35a82201c8>:2: DtypeWarning: Columns (20) have mixed types. Specify dtype option on import or set low_memory=False.
+  koch = pd.read_csv("C:/Users/Dann_/OneDrive/Documentos/hack/sfguide-intro-to-machine-learning-with-snowpark-ml-for-python/koch.csv")
+
+2024-04-06 20:48:35,402:WARNING:<ipython-input-34-4b7eafd3413a>:14: UserWarning: Matplotlib is currently using module://matplotlib_inline.backend_inline, which is a non-GUI backend, so cannot show the figure.
+  g.fig.show()
+

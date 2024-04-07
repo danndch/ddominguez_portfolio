@@ -9,7 +9,15 @@ format:
     title-block-banner: true
     toc: true
     toc-depth: 3
-    toc-location: body
+    toc-float:
+      floated: true
+      smooth-scroll: true
+      toc-styles:
+        width: 20%
+        height: auto
+        overflow: auto
+        position: fixed
+        right: 0
     number-sections: false
     html-math-method: katex
     code-fold: true
@@ -56,7 +64,9 @@ The SELECT statement specifies the columns of data you want to retrieve from one
 
 Example:
 
-SELECT FirstName, LastName FROM Employees;
+SELECT FirstName, LastName <br>
+FROM Employees; <br>
+
 This query retrieves the FirstName and LastName columns from the Employees table.
 
 ### FROM/JOIN
@@ -64,9 +74,10 @@ The FROM clause specifies the table(s) from which to retrieve data. When data ne
 
 Example:
 
-SELECT Orders.OrderID, Customers.CustomerName
-FROM Orders
-INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+SELECT Orders.OrderID, Customers.CustomerName <br>
+FROM Orders <br>
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID; <br>
+
 This query retrieves order IDs from the Orders table and the corresponding customer names by joining the Orders table with the Customers table on the CustomerID column.
 
 ### WHERE
@@ -74,7 +85,10 @@ The WHERE clause filters records to include only those that meet certain conditi
 
 Example:
 
-SELECT * FROM Employees WHERE Department = 'Marketing';
+SELECT * <br>
+FROM Employees <br>
+WHERE Department = 'Marketing';<br>
+
 This query retrieves all columns for employees who work in the Marketing department.
 
 ### HAVING
@@ -82,10 +96,11 @@ The HAVING clause is used to filter groups of rows after they've been grouped by
 
 Example:
 
-SELECT Department, COUNT(EmployeeID) AS NumberOfEmployees
-FROM Employees
-GROUP BY Department
-HAVING COUNT(EmployeeID) > 10;
+  SELECT Department, COUNT(EmployeeID) AS NumberOfEmployees <br>
+  FROM Employees <br>
+  GROUP BY Department <br>
+  HAVING COUNT(EmployeeID) > 10; <br>
+
 This query counts the number of employees in each department and only includes those departments with more than 10 employees.
 
 ### GROUP BY
@@ -93,9 +108,10 @@ The GROUP BY clause groups rows that have the same values in specified columns i
 
 Example:
 
-SELECT Department, AVG(Salary) AS AverageSalary
-FROM Employees
-GROUP BY Department;
+  SELECT Department, AVG(Salary) AS AverageSalary <br>
+  FROM Employees <br>
+  GROUP BY Department; <br>
+
 This query calculates the average salary within each department.
 
 ### ORDER BY
@@ -103,9 +119,10 @@ The ORDER BY clause is used to sort the result set of a query by one or more col
 
 Example:
 
-SELECT FirstName, LastName, Salary
-FROM Employees
-ORDER BY Salary DESC;
+ SELECT FirstName, LastName, Salary <br> 
+ FROM Employees <br>
+ ORDER BY Salary DESC; <br>
+
 This query retrieves employee names and salaries, sorted by salary in descending order.
 
 ### LIMIT/OFFSET
@@ -113,8 +130,9 @@ The LIMIT clause is used to constrain the number of rows returned by a query. Th
 
 Example:
 
-SELECT * FROM Employees
-LIMIT 10 OFFSET 5;
+ SELECT * <br>
+ FROM Employees <br>
+ LIMIT 10 OFFSET 5; <br>
 This query skips the first 5 rows and then retrieves the next 10 rows from the Employees table.
 
 
@@ -123,8 +141,9 @@ A subquery is a query embedded within another query. It can be used in various p
 
 Example of a subquery in a WHERE clause:
 
-SELECT * FROM Employees
-WHERE DepartmentID IN (SELECT DepartmentID FROM Departments WHERE Name = 'Research');
+SELECT * <br>
+FROM Employees <br>
+WHERE DepartmentID IN (SELECT DepartmentID FROM Departments WHERE Name = 'Research');<br>
 
 In this example, the subquery selects DepartmentIDs from the Departments table where the department name is 'Research'. The main query then uses these IDs to filter employees from those specific departments.
 
@@ -133,14 +152,14 @@ A nested query refers to a broader category of queries that contain other querie
 
 Example of a nested query in a FROM clause:
 
-SELECT AvgSalaries.Department, Employee.Name, Employee.Salary
-FROM Employees AS Employee
-JOIN (
-    SELECT DepartmentID, AVG(Salary) AS AverageSalary
-    FROM Employees
-    GROUP BY DepartmentID
-) AS AvgSalaries ON Employee.DepartmentID = AvgSalaries.DepartmentID
-WHERE Employee.Salary > AvgSalaries.AverageSalary;
+ SELECT AvgSalaries.Department, Employee.Name, Employee.Salary <br>
+ FROM Employees AS Employee <br>
+ JOIN ( <br>
+   SELECT DepartmentID, AVG(Salary) AS AverageSalary <br>
+    FROM Employees <br>
+   GROUP BY DepartmentID <br>
+) AS AvgSalaries ON Employee.DepartmentID = AvgSalaries.DepartmentID <br>
+WHERE Employee.Salary > AvgSalaries.AverageSalary; <br>
 
 In this example, the nested query calculates the average salary per department and creates a temporary table (AvgSalaries) with this information. The outer query then selects employees who earn more than the average salary in their respective departments.
 

@@ -9,7 +9,15 @@ format:
     title-block-banner: true
     toc: true
     toc-depth: 3
-    toc-location: body
+    toc-float:
+      floated: true
+      smooth-scroll: true
+      toc-styles:
+        width: 20%
+        height: auto
+        overflow: auto
+        position: fixed
+        right: 0
     number-sections: false
     html-math-method: katex
     code-fold: true

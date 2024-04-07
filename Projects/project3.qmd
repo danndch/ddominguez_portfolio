@@ -9,7 +9,15 @@ format:
     title-block-banner: true
     toc: true
     toc-depth: 3
-    toc-location: body
+    toc-float:
+      floated: true
+      smooth-scroll: true
+      toc-styles:
+        width: 20%
+        height: auto
+        overflow: auto
+        position: fixed
+        right: 0
     number-sections: false
     html-math-method: katex
     code-fold: true
@@ -112,4 +120,4 @@ Overall impression/COMMENTS:
 
 * I love your poster. It will be very helpful for students trying to understand their options. The handout was a great idea; I’m going to recommend that everyone do a handout! Well done!
 
-![](C:/Users/Dann_/OneDrive - BYU-Idaho/BYU Idaho/11th Semester W24/Senior Project/ddominguez_portfolio/Images/Data Maturity Map.png){width=60%}
+![](C:/Users/Dann_/OneDrive - BYU-Idaho/BYU Idaho/11th Semester W24/Senior Project/ddominguez_portfolio/Images/conf.jpg){width=60%}
