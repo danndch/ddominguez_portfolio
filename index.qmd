@@ -1,5 +1,19 @@
 ---
 title: "Welcom to my portfolio"
+about:
+  template: jolla
+  id: about-block
+  image: "img/my_image.jpg"
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/danndch
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/dann-dominguez/
+    - icon: envelope
+      text: Email
+      href: "mailto:mail.danndch7@gmail.com" 
 # use quarto markdown to 
 ---
 

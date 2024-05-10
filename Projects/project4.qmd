@@ -24,163 +24,169 @@ execute:
     
 ---
 
+
 ```{python}
 #| label: libraries
 #| include: false
 import pandas as pd
 import numpy as np
 import plotly.express as px
-import pycaret
-
-import seaborn as sns
-import matplotlib.pyplot as plt
 ```
 
 
-## The project
-This project during the Utah State Hackathon, the objective was to work with a Database that lived in Snowflake, due some thechnical issues we were not able to work with it in the platform, but we downloaded using spark and then work in pandas to try to address our objective which was to predict when would an order be delivered. 
+## Elevator pitch
 
-There were many approaches we tried and from the project we didn't get a final conclussion after 24 hours working without stopping. I leave the dataset with some of my code and some of the annotations, I am still working on this by my own, where I have been able to bump the accuracy to 63% I am still trying to upload because it is 43MB being compressed.
-
-
-### This is how the data looks
+_paste your elevator pitch here_
+_A SHORT (4-5 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS._
 
 ```{python}
 #| label: project data
 #| code-summary: Read and format project data
 # Include and execute your code here
-koch = pd.read_csv("C:/Users/Dann_/OneDrive/Documentos/hack/sfguide-intro-to-machine-learning-with-snowpark-ml-for-python/koch.csv")
-koch.head()
+df = pd.read_csv("https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv")
 ```
 
-The target variable was a calculated column from 2 others, which when you include it in a model of course it becomes data leakeage and it is not helpful because the R sqared is of 1.
+__Highlight the Questions and Tasks__
 
-Here is some data wrangling that I did
+## QUESTION|TASK 1
+
+__COPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE__
+
+_type your results and analysis here_
 
 ```{python}
-koch['TARGET'] = koch['FIRST_GR_POSTING_DATE']-koch['DELIVERY_DATE']
-
-
-#Creating target column
-koch['Time_Difference'] = koch['FIRST_GR_POSTING_DATE'] - koch['DELIVERY_DATE']
-
-koch['Time_Difference'] = koch['Time_Difference'].dt.days
-
-fallback_diff = (koch['REQUESTED_DELIVERY_DATE'] - koch['DELIVERY_DATE']).dt.days
-
-#Fill in Time_Difference where it's NaN with the fallback difference
-koch['Time_Difference'] = np.where(koch['Time_Difference'].isna(), fallback_diff, koch['Time_Difference'])
-
-def determine_status(days):
-    if days < 0:
-        return 'Early'
-    elif days == 0:
-        return 'On Time'
-    else:
-        return 'Late'
-
-# Assuming 'Time_Difference' is your column with the date difference in days
-koch['Arrival_Status'] = koch['Time_Difference'].apply(determine_status)
-
-koch['country'] = koch['COMPANY_CODE_ID'].str.slice(0, 2)
-koch['region'] = koch['COMPANY_CODE_ID'].str.slice(2, 4)
-
-koch = koch[koch['DELIVERY_DATE'] >= koch['CREATE_DATE']]
-
-from datetime import datetime, timedelta
-
-# Get tomorrow's date for comparison
-tomorrow = datetime.today().date() + timedelta(days=1)
-
-# Filter rows where 'DELIVERY_DATE' is tomorrow or in the future
-koch = koch[koch['DELIVERY_DATE'].dt.date <= tomorrow]
+#| label: Q1
+#| code-summary: Read and format data
+# Include and execute your code here
 
 
 ```
 
-Two obstacles we found was that there were some dates that did not make sense, either the order was created on a certain date and the delivery date was posted as prior to the order. The other one was that there was an order created in a correct time but the delivery date which means it was already deliverd, some columns shown a date after today, meaning that it was deliverd in the future. So that is something that we need to drop and address.
+_include figures in chunks and discuss your findings in the figure._
 
 ```{python}
-
-original_count = len(koch)
-
-weird_dates_df = koch[koch['DELIVERY_DATE'] > koch['CREATE_DATE']]
-filtered_count = len(weird_dates_df)
-
-# Calculate the number of dropped rows
-dropped_count = original_count - filtered_count
-
-print(f"Number of rows dropped: {dropped_count}")
+#| label: Q1 chart
+#| code-summary: plot example
+#| fig-cap: "My useless chart"
+#| fig-align: center
+# Include and execute your code here
+chart = px.bar(df.head(200),
+    x="name", 
+    y="AK"
+)
+chart.show()
 ```
 
-The following graph was to help us understand the distribution of the early, on time, and late fields
 
 ```{python}
-# Group by 'DELIVERY_DATE' and 'Arrival_Status', and count the occurrences
-graph_data = koch.groupby(['DELIVERY_DATE', 'Arrival_Status']).size().reset_index(name='Count')
+#| label: Q1 table
+#| code-summary: table example
+#| tbl-cap: "Not much of a table"
+#| tbl-cap-location: top
+# Include and execute your code here
+mydat = df.head(1000)\
+    .groupby('year')\
+    .sum()\
+    .reset_index()\
+    .tail(10)\
+    .filter(["year", "AK","AR"])
 
-# Sort the resulting DataFrame by 'DELIVERY_DATE'
-graph_data = graph_data.sort_values(by='DELIVERY_DATE')
-
-graph_data
-
-
-color_palette = {
-    "On Time": "green", 
-    "Late": "red",
-    "Early": "blue"  }
-
-g = sns.FacetGrid(graph_data, col="Arrival_Status", col_wrap=4, sharex=False, sharey=False)
-
-# Use map_dataframe to apply sns.lineplot
-g.map_dataframe(sns.lineplot, x="DELIVERY_DATE", y="Count", hue="Arrival_Status", palette=color_palette, alpha =.7)
-
-# Add a legend and adjust subplot titles
-g.add_legend(title="Arrival Status")
-g.set_titles("{col_name}")
-
-# Set custom axis labels
-g.set_axis_labels("Delivery Date", "Count of packages received")
-
-# Set the overall title for the figure
-g.fig.suptitle('Distribution of number of packages delivered by the status', fontsize=16)
-
-# Optionally, adjust the layout
-plt.tight_layout()
-
-# Show the plot
-plt.show()
+display(mydat)
 
 ```
 
-This plot was the most helpful because the approach for this problem will have to be how different is the type of delays or early deliveries by the country and by the material
+
+## QUESTION|TASK 2
+
+__COPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE__
+
+_type your results and analysis here_
 
 ```{python}
+#| label: Q2
+#| code-summary: Read and format data
+# Include and execute your code here
 
-sns.countplot(koch, x='country', hue="Arrival_Status")
+
 ```
 
-Then creating a vizualization to help see if this help us find more findings to do some featyre engineering
+_include figures in chunks and discuss your findings in the figure._
 
 ```{python}
+#| label: Q2 chart
+#| code-summary: plot example
+#| fig-cap: "My useless chart"
+#| fig-align: center
+# Include and execute your code here
+chart = px.bar(df.head(200),
+    x="name", 
+    y="AK"
+)
+chart.show()
+```
 
-data = koch[['country', 'region', 'Arrival_Status']]
 
-# Use catplot to create a count plot on 'region' with hue 'Arrival_Status', facetted by 'country'
-g = sns.catplot(data=data, kind='count', x='region', hue='Arrival_Status', col='country', col_wrap=4, height=4, aspect=1, sharex=False, sharey=False)
+```{python}
+#| label: Q2 table
+#| code-summary: table example
+#| tbl-cap: "Not much of a table"
+#| tbl-cap-location: top
+# Include and execute your code here
+mydat = df.head(1000)\
+    .groupby('year')\
+    .sum()\
+    .reset_index()\
+    .tail(10)\
+    .filter(["year", "AK","AR"])
 
-# Rotate x-axis labels for readability if needed
-g.set_xticklabels(rotation=90)
-
-# Adjust spacing and layout
-g.fig.subplots_adjust(top=0.9)  # adjust the Figure in g
-g.fig.suptitle('Arrival Status by Region and Country')
-
-# Show plot
-g.fig.show()
-
+display(mydat)
 
 ```
 
 
-If you want to take a look to my approach in the code I did that day here is the [file](/1_snowpark_ml_data_ingest.jpynb)
+## QUESTION|TASK 3
+
+__COPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE__
+
+_type your results and analysis here_
+
+```{python}
+#| label: Q3
+#| code-summary: Read and format data
+# Include and execute your code here
+
+
+```
+
+_include figures in chunks and discuss your findings in the figure._
+
+```{python}
+#| label: Q3 chart
+#| code-summary: plot example
+#| fig-cap: "My useless chart"
+#| fig-align: center
+# Include and execute your code here
+chart = px.bar(df.head(200),
+    x="name", 
+    y="AK"
+)
+chart.show()
+```
+
+
+```{python}
+#| label: Q3 table
+#| code-summary: table example
+#| tbl-cap: "Not much of a table"
+#| tbl-cap-location: top
+# Include and execute your code here
+mydat = df.head(1000)\
+    .groupby('year')\
+    .sum()\
+    .reset_index()\
+    .tail(10)\
+    .filter(["year", "AK","AR"])
+
+display(mydat)
+
+```
