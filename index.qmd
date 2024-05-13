@@ -1,9 +1,9 @@
 ---
-title: "Welcom to my portfolio"
+title: "Welcome to my portfolio"
 about:
   template: jolla
   id: about-block
-  image: "img/my_image.jpg"
+  image: "Images/prin.jpg"
   links:
     - icon: github
       text: Github
