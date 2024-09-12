@@ -1,0 +1,16 @@
+---
+title: "BI Tools"
+# use quarto markdown to 
+---
+
+## Power BI
+
+During my time as a Data Scientist, there has been different projects that will ask for a dashbord with a BI tool, one of the most common ones is Microsoft Power BI, it is a great tool which allows me to deliver a simple project where interaction is one of the offers from this tool apart that letting you build the connection and do the ETL process 
+
+
+
+
+## Title 2 Header
+
+[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+
