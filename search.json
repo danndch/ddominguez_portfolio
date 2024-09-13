@@ -348,14 +348,14 @@
     "href": "bi_projects/iWork.html",
     "title": "iWorq Solutions",
     "section": "",
-    "text": "iWorQ, a leading software provider for local government agencies, tasked my team with enhancing an existing dashboard that tracks usage and account activity for their various applications. The goal was to build on the prior work and introduce new functionality to help iWorQ make data-driven decisions about user engagement, cancellations, and active usage trends."
+    "text": "iWorQ, a leading software provider for local government agencies, tasked my team with automating and re-designed an existing dashboard that tracks usage and account activity for their various applications. The goal was to build on the prior work and introduce new functionality to help iWorQ make data-driven decisions about user engagement, cancellations, and active usage trends."
   },
   {
     "objectID": "bi_projects/iWork.html#executive-summary",
     "href": "bi_projects/iWork.html#executive-summary",
     "title": "iWorq Solutions",
     "section": "",
-    "text": "iWorQ, a leading software provider for local government agencies, tasked my team with enhancing an existing dashboard that tracks usage and account activity for their various applications. The goal was to build on the prior work and introduce new functionality to help iWorQ make data-driven decisions about user engagement, cancellations, and active usage trends."
+    "text": "iWorQ, a leading software provider for local government agencies, tasked my team with automating and re-designed an existing dashboard that tracks usage and account activity for their various applications. The goal was to build on the prior work and introduce new functionality to help iWorQ make data-driven decisions about user engagement, cancellations, and active usage trends."
   },
   {
     "objectID": "bi_projects/iWork.html#project-scope",
@@ -365,18 +365,25 @@
     "text": "Project Scope\nThe key objectives of the project were:\n\nClickable application types: Provide the ability to view usage data by application (e.g., Permit, Code Enforcement), with details on accounts using each application frequently or infrequently.\n\nSpikes in usage: Identify changes in usage behavior, such as sudden spikes or drop-offs.\n\nMost active accounts: Highlight accounts that are highly engaged across multiple applications.\n\nUser Information: Enable users to access contact details and usage information for each account and application.\n\nAutomated Updates: Implement real-time or periodic (weekly/monthly) updates to ensure the data reflects the latest user activity and cancellations.\n\nCancellation and inactivity tracking: Accurately account for cancellations, ensuring inactive applications are not mistaken for under-utilization."
   },
   {
+    "objectID": "bi_projects/iWork.html#challenges-with-the-project",
+    "href": "bi_projects/iWork.html#challenges-with-the-project",
+    "title": "iWorq Solutions",
+    "section": "Challenges with the project",
+    "text": "Challenges with the project\nThe planning of this project was quite an experience because we were meeting with the company every other week. At the beginning of the process we were looking to track time more than clicks but after some time and meetings we were able to focus on a new unit of analysis. One of the most important challenges we got apart from the unit of analysis was also that during the middle of the project, the main contact in the company was let go. This left us around 3 weeks in the air not being able to address more of the things we were able to custimize with them, but during that time we were able to implement the features of prediction for the low usage accounts."
+  },
+  {
     "objectID": "bi_projects/iWork.html#technical-process",
     "href": "bi_projects/iWork.html#technical-process",
     "title": "iWorq Solutions",
     "section": "Technical Process",
-    "text": "Technical Process\nWe used Python, specifically the awswrangler and boto3 libraries, to pull data from an AWS S3 bucket. The S3 bucket contained partitioned Parquet files with historical usage data, spanning over two years. The code I developed allowed us to extract this data efficiently by filtering the relevant data using year and week partitions, ensuring only necessary data was retrieved and processed.\nThe filtering logic was crucial, as it ensured that data from the appropriate time frame (two years back) was pulled without retrieving unnecessary records. The following snippet illustrates the filtering process for pulling data from the S3 bucket:"
+    "text": "Technical Process\nWe used Python, specifically the awswrangler and boto3 libraries, to pull data from an AWS S3 bucket. The S3 bucket contained partitioned Parquet files with historical usage data, spanning over two years. The code I developed allowed us to extract this data efficiently by filtering the relevant data using year and week partitions, ensuring only necessary data was retrieved and processed.\nThe filtering logic was the hardest part of this, as it make sure that data from the appropriate time frame (two years back) was pulled without loading unnecessary records."
   },
   {
-    "objectID": "bi_projects/iWork.html#dashboard-features",
-    "href": "bi_projects/iWork.html#dashboard-features",
+    "objectID": "bi_projects/iWork.html#the-dashboard",
+    "href": "bi_projects/iWork.html#the-dashboard",
     "title": "iWorq Solutions",
-    "section": "Dashboard Features",
-    "text": "Dashboard Features\nThe final dashboard provides:\n\nOverview of Usage Data: For each application, users can view which accounts are using it the most or the least.\n\nActive Accounts and Users: A list of the most active accounts, including detailed information about which applications are being used and the key contacts associated with each.\n\nTrend Identification: The dashboard automatically flags usage trends, showing increases or decreases in account activity.\n\nAutomated Data Refresh: The dashboard is updated on a scheduled basis (weekly or monthly), pulling the latest data from the S3 bucket to reflect real-time usage."
+    "section": "The Dashboard",
+    "text": "The Dashboard\nThe final dashboard provides:\n\nOverview of Usage Data: For each application, users can view which accounts are using it the most or the least.\n\nActive Accounts and Users: A list of the most active accounts, including detailed information about which applications are being used and the key contacts associated with each.\n\nTrend Identification: The dashboard automatically flags usage trends, showing increases or decreases in account activity.\n\nAutomated Data Refresh: The dashboard is updated on a scheduled basis (weekly or monthly), pulling the latest data from the S3 bucket to reflect real-time usage.\n\n\n\nPage 1\nAccount App provides information on the usage of the apps, having filters that would bring the Top 10, Bottom 10, and a summary.\n\n\n\n\nPage 2\nUsage over time, this vision helps the people at iWorq to see the usage overtime from differents applications, this page helps understand the trends of usage and it lets you see the spikes in usage they were interested in seeing.\n\n\n\n\nPage 3\nChanges in usage page, the page that helps them understand the records created but this vision helps understand the usage over the 2 years. \n\n\n\nPage 4\nThis last page, brings the crucial part of helping them understand the low accounts and the inactive accounts. This feature came up during the planning of what we needed to do."
   },
   {
     "objectID": "BI.html",
